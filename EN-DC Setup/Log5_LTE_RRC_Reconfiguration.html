@@ -1,0 +1,389 @@
+
+<!-- saved from url=(0114)http://experience.awardsolutions.com/interactive_callflows/EN_DC_Setup/Drive_Logs/Log5_LTE_RRC_Reconfiguration.txt -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Copyright © 2019 Accuver Americas, Inc. All Rights Reserved
+# The data in this file is derived from log(s) provided through
+# the courtesy of Accuver Americas, Inc. under special permission
+# to Award Solutions, Inc. 
+
+PC Timestamp: [ 2019  Jun  20    15:06:11.133 ]
+
+
+Version_number : 26
+RRC_VER_Major : 15
+RRC_VER_minor : 4.0
+NR_RRC_VER_Major : 15
+NR_RRC_VER_minor : 4.1
+RB_ID : 1
+PHYSICAL_CELL_ID : 85
+FREQ : 41292
+Subframe_number : 198
+System_frame_number : N/A
+PDU_NUM : DL_DCCH Message
+SIB_Mask_in_SI : 0x00000000
+ENCODED_MSG_LEN : 336
+
+
+value DL-DCCH-Message ::= 
+  message c1 : rrcConnectionReconfiguration : 
+        rrc-TransactionIdentifier 0,
+        criticalExtensions c1 : rrcConnectionReconfiguration-r8 : 
+              measConfig 
+                measObjectToAddModList 
+                    measObjectId 1,
+                    measObject measObjectEUTRA : 
+                        carrierFreq 41292,
+                        allowedMeasBandwidth mbw100,
+                        presenceAntennaPort1 TRUE,
+                        neighCellConfig '10'B,
+                        cellsToAddModList 
+                            cellIndex 1,
+                            physCellId 42,
+                            cellIndividualOffset dB-1
+                           ,
+                            cellIndex 2,
+                            physCellId 44,
+                            cellIndividualOffset dB-1
+                           ,
+                            cellIndex 3,
+                            physCellId 92,
+                            cellIndividualOffset dB-1
+                           ,
+                            cellIndex 4,
+                            physCellId 185,
+                            cellIndividualOffset dB-1
+                           ,
+                            cellIndex 5,
+                            physCellId 212,
+                            cellIndividualOffset dB-1
+                           ,
+                            cellIndex 6,
+                            physCellId 230,
+                            cellIndividualOffset dB-1
+                           ,
+                            cellIndex 7,
+                            physCellId 414,
+                            cellIndividualOffset dB-1
+                   ,
+                    measObjectId 2,
+                    measObject measObjectNR-r15 : 
+                        carrierFreq-r15 522078,
+                        rs-ConfigSSB-r15 
+                          measTimingConfig-r15 
+                            periodicityAndOffset-r15 sf20-r15 : 14,
+                            ssb-Duration-r15 sf5
+                           ,
+                          subcarrierSpacingSSB-r15 kHz30
+                         ,
+                        quantityConfigSet-r15 1,
+                        bandNR-r15 setup : 41
+                   ,
+                    measObjectId 3,
+                    measObject measObjectEUTRA : 
+                        carrierFreq 41490,
+                        allowedMeasBandwidth mbw100,
+                        presenceAntennaPort1 TRUE,
+                        neighCellConfig '10'B,
+                        measCycleSCell-r10 sf160
+                 ,
+                reportConfigToAddModList 
+                    reportConfigId 1,
+                    reportConfig reportConfigEUTRA : 
+                        triggerType event : 
+                            eventId eventA3 : 
+                                a3-Offset 4,
+                                reportOnLeave FALSE
+                               ,
+                            hysteresis 0,
+                            timeToTrigger ms480
+                           ,
+                        triggerQuantity rsrp,
+                        reportQuantity both,
+                        maxReportCells 4,
+                        reportInterval ms480,
+                        reportAmount infinity
+                   ,
+                    reportConfigId 2,
+                    reportConfig reportConfigEUTRA : 
+                        triggerType event : 
+                            eventId eventA2 : 
+                                a2-Threshold threshold-RSRP : 26
+                               ,
+                            hysteresis 4,
+                            timeToTrigger ms480
+                           ,
+                        triggerQuantity rsrp,
+                        reportQuantity both,
+                        maxReportCells 1,
+                        reportInterval ms5120,
+                        reportAmount infinity
+                   ,
+                    reportConfigId 3,
+                    reportConfig reportConfigInterRAT : 
+                        triggerType event : 
+                            eventId eventB1-NR-r15 : 
+                                b1-ThresholdNR-r15 nr-RSRP-r15 : 41,
+                                reportOnLeave-r15 FALSE
+                               ,
+                            hysteresis 2,
+                            timeToTrigger ms100
+                           ,
+                        maxReportCells 4,
+                        reportInterval ms120,
+                        reportAmount infinity,
+                        reportQuantityCellNR-r15 
+                          ss-rsrp TRUE,
+                          ss-rsrq TRUE,
+                          ss-sinr FALSE
+                   ,
+                    reportConfigId 4,
+                    reportConfig reportConfigEUTRA : 
+                        triggerType event : 
+                            eventId eventA2 : 
+                                a2-Threshold threshold-RSRP : 14
+                               ,
+                            hysteresis 2,
+                            timeToTrigger ms40
+                           ,
+                        triggerQuantity rsrp,
+                        reportQuantity both,
+                        maxReportCells 1,
+                        reportInterval ms480,
+                        reportAmount infinity
+                   ,
+                    reportConfigId 5,
+                    reportConfig reportConfigEUTRA : 
+                        triggerType event : 
+                            eventId eventA1 : 
+                                a1-Threshold threshold-RSRP : 14
+                               ,
+                            hysteresis 2,
+                            timeToTrigger ms40
+                           ,
+                        triggerQuantity rsrp,
+                        reportQuantity both,
+                        maxReportCells 1,
+                        reportInterval ms480,
+                        reportAmount infinity
+                 ,
+                measIdToAddModList 
+                    measId 1,
+                    measObjectId 1,
+                    reportConfigId 1
+                   ,
+                    measId 2,
+                    measObjectId 1,
+                    reportConfigId 2
+                   ,
+                    measId 3,
+                    measObjectId 2,
+                    reportConfigId 3
+                   ,
+                    measId 4,
+                    measObjectId 3,
+                    reportConfigId 4
+                   ,
+                    measId 5,
+                    measObjectId 3,
+                    reportConfigId 5
+                 ,
+                quantityConfig 
+                  quantityConfigEUTRA 
+                    filterCoefficientRSRP fc8
+                   ,
+                  quantityConfigCDMA2000 
+                    measQuantityCDMA2000 pilotStrength
+                   ,
+                  quantityConfigNRList-r15 
+                      measQuantityCellNR-r15 
+                 ,
+                preRegistrationInfoHRPD 
+                  preRegistrationAllowed FALSE
+                 ,
+                speedStatePars release : NULL
+               ,
+              dedicatedInfoNASList 
+                '27E6A4322402EF9A5299A925E3C602254402DFE69C87BFF0A07142BDAF0DFE8A8807AF1678E104329EA4F6D8781DB4C044B600C2AD9BA7726656759E8EBE0147324C136A1E51034CB0018DDE27EBA6D0E59AD28198301DCCDB43ADCAF289A0D3FE6A0574C002BF7DE4837730E96F9AF734343F32199196BF8093BDF3AFC2B75C8A3C46537CE7C15CF200634B14634FCAD834E200A9FB9D7FB168F0C1593E2F8E077AAFE2156B4807D2236F31F6'H
+               ,
+              radioResourceConfigDedicated 
+                srb-ToAddModList 
+                    srb-Identity 2,
+                    rlc-Config explicitValue : am : 
+                          ul-AM-RLC 
+                            t-PollRetransmit ms160,
+                            pollPDU pInfinity,
+                            pollByte kBinfinity,
+                            maxRetxThreshold t32
+                           ,
+                          dl-AM-RLC 
+                            t-Reordering ms60,
+                            t-StatusProhibit ms0
+                         ,
+                    logicalChannelConfig defaultValue : NULL
+                 ,
+                drb-ToAddModList 
+                    eps-BearerIdentity 5,
+                    drb-Identity 3,
+                    pdcp-Config 
+                      discardTimer ms300,
+                      rlc-AM 
+                        statusReportRequired FALSE
+                       ,
+                      headerCompression notUsed : NULL
+                     ,
+                    rlc-Config am : 
+                        ul-AM-RLC 
+                          t-PollRetransmit ms160,
+                          pollPDU p16,
+                          pollByte kBinfinity,
+                          maxRetxThreshold t32
+                         ,
+                        dl-AM-RLC 
+                          t-Reordering ms25,
+                          t-StatusProhibit ms0
+                       ,
+                    logicalChannelIdentity 3,
+                    logicalChannelConfig 
+                      ul-SpecificParameters 
+                        priority 11,
+                        prioritisedBitRate kBps8,
+                        bucketSizeDuration ms50,
+                        logicalChannelGroup 3
+                 ,
+                mac-MainConfig explicitValue : 
+                    drx-Config setup : 
+                        onDurationTimer psf10,
+                        drx-InactivityTimer psf200,
+                        drx-RetransmissionTimer psf2,
+                        longDRX-CycleStartOffset sf320 : 319,
+                        shortDRX 
+                          shortDRX-Cycle sf40,
+                          drxShortCycleTimer 2
+                       ,
+                    timeAlignmentTimerDedicated infinity,
+                    mac-MainConfig-v1020 
+                   ,
+                physicalConfigDedicated 
+                  pucch-ConfigDedicated 
+                    ackNackRepetition release : NULL
+                   ,
+                  soundingRS-UL-ConfigDedicated setup : 
+                      srs-Bandwidth bw0,
+                      srs-HoppingBandwidth hbw0,
+                      freqDomainPosition 0,
+                      duration TRUE,
+                      srs-ConfigIndex 31,
+                      transmissionComb 1,
+                      cyclicShift cs6
+                     ,
+                  antennaInfo-r10 explicitValue-r10 : 
+                      transmissionMode-r10 tm8-v920,
+                      codebookSubsetRestriction-r10 '111111'B,
+                      ue-TransmitAntennaSelection release : NULL
+                     ,
+                  cqi-ReportConfig-r10 
+                    cqi-ReportAperiodic-r10 setup : 
+                        cqi-ReportModeAperiodic-r10 rm31,
+                        aperiodicCSI-Trigger-r10 
+                          trigger1-r10 '01000000'B,
+                          trigger2-r10 '11000000'B
+                       ,
+                    nomPDSCH-RS-EPRE-Offset 3,
+                    cqi-ReportPeriodic-r10 setup : 
+                        cqi-PUCCH-ResourceIndex-r10 0,
+                        cqi-pmi-ConfigIndex 83,
+                        cqi-FormatIndicatorPeriodic-r10 widebandCQI-r10 : 
+                           ,
+                        ri-ConfigIndex 322,
+                        simultaneousAckNackAndCQI FALSE
+                       ,
+                    pmi-RI-Report-r9 setup
+                   ,
+                  pucch-ConfigDedicated-v1020 
+                    pucch-Format-r10 format3-r10 : 
+                        n3PUCCH-AN-List-r13 
+                          87,
+                          88,
+                          85,
+                          86
+               ,
+              nonCriticalExtension 
+                nonCriticalExtension 
+                  nonCriticalExtension 
+                    sCellToAddModList-r10 
+                        sCellIndex-r10 1,
+                        cellIdentification-r10 
+                          physCellId-r10 85,
+                          dl-CarrierFreq-r10 41490
+                         ,
+                        radioResourceConfigCommonSCell-r10 
+                          nonUL-Configuration-r10 
+                            dl-Bandwidth-r10 n100,
+                            antennaInfoCommon-r10 
+                              antennaPortsCount an2
+                             ,
+                            phich-Config-r10 
+                              phich-Duration normal,
+                              phich-Resource one
+                             ,
+                            pdsch-ConfigCommon-r10 
+                              referenceSignalPower 13,
+                              p-b 1
+                             ,
+                            tdd-Config-r10 
+                              subframeAssignment sa2,
+                              specialSubframePatterns ssp6
+                         ,
+                        radioResourceConfigDedicatedSCell-r10 
+                          physicalConfigDedicatedSCell-r10 
+                            nonUL-Configuration-r10 
+                              antennaInfo-r10 
+                                transmissionMode-r10 tm3,
+                                codebookSubsetRestriction-r10 '11'B,
+                                ue-TransmitAntennaSelection release : NULL
+                               ,
+                              pdsch-ConfigDedicated-r10 
+                                p-a dB-1dot77
+                             ,
+                            ul-Configuration-r10 
+                              cqi-ReportConfigSCell-r10 
+                                cqi-ReportModeAperiodic-r10 rm30,
+                                nomPDSCH-RS-EPRE-Offset-r10 0
+[Nas Data] : 
+This analyzer cannot decode this L3 message due to ciphered hex.
+
+L3 Data in Hex : 
+    20 16 95 98 80 04 50 A6 5C 60
+    0A 9C 11 63 84 5C 70 D7 2E 23
+    51 C5 73 38 D9 E7 06 04 2A 00
+    FE EB C4 E8 80 40 86 14 00 42
+    05 10 95 C1 60 01 80 20 01 44
+    04 AC B8 40 8D 12 50 DC 5A 0C
+    08 52 00 48 C3 86 02 03 0C 30
+    21 C2 14 17 20 00 E1 0A 0B 90
+    00 00 40 11 04 43 10 C8 22 66
+    40 18 80 C0 00 40 56 93 F3 52
+    19 12 01 77 CD 29 4C D4 92 F1
+    E3 01 12 A2 01 6F F3 4E 43 DF
+    F8 50 38 A1 5E D7 86 FF 45 44
+    03 D7 8B 3C 70 82 19 4F 52 7B
+    6C 3C 0E DA 60 22 5B 00 61 56
+    CD D3 B9 33 2B 3A CF 47 5F 00
+    A3 99 26 09 B5 0F 28 81 A6 58
+    00 C6 EF 13 F5 D3 68 72 CD 69
+    40 CC 18 0E E6 6D A1 D6 E5 79
+    44 D0 69 FF 35 02 BA 60 01 5F
+    BE F2 41 BB 98 74 B7 CD 7B 9A
+    1A 1F 99 0C C8 CB 5F C0 49 DE
+    F9 D7 E1 5B AE 45 1E 23 29 BE
+    73 E0 AE 79 00 31 A5 8A 31 A7
+    E5 6C 1A 71 00 54 FD CE BF D8
+    B4 78 60 AC 9F 17 C7 03 BD 57
+    F1 0A B5 A4 03 E9 11 B7 98 FB
+    35 38 3F FB B0 08 3E A2 66 07
+    D7 72 80 1D 08 D5 BB CC CF DC
+    78 84 00 0C 05 04 20 08 3F C2
+    90 00 9C A0 5C 1B F7 71 03 02
+    50 00 0A 62 84 85 8A E2 C0 AA
+    2B 02 50 E0 AB 44 24 35 52 54
+    CB 99 01 66 22 32
+</pre></body></html>

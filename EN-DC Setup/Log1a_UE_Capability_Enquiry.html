@@ -1,0 +1,60 @@
+
+<!-- saved from url=(0113)http://experience.awardsolutions.com/interactive_callflows/EN_DC_Setup/Drive_Logs/Log1a_UE_Capability_Enquiry.txt -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Copyright © 2019 Accuver Americas, Inc. All Rights Reserved
+# The data in this file is derived from log(s) provided through
+# the courtesy of Accuver Americas, Inc. under special permission
+# to Award Solutions, Inc. 
+
+[ 2019  Jun  20    15:06:11.027829 ] ueCapabilityEnquiry
+Chipset timestamp: 2019-06-20 15:06:50.754, CFN : 195
+Dual Mode Index : 0
+SIM Index : 1
+Version_number : 26
+RRC_VER_Major : 15
+RRC_VER_minor : 4.0
+NR_RRC_VER_Major : 15
+NR_RRC_VER_minor : 4.1
+RB_ID : 1
+PHYSICAL_CELL_ID : 85
+FREQ : 41292
+Subframe_number : 51
+System_frame_number : N/A
+PDU_NUM : DL_DCCH Message
+SIB_Mask_in_SI : 0x00000000
+ENCODED_MSG_LEN : 17
+
+value DL-DCCH-Message ::= 
+  message c1 : ueCapabilityEnquiry : 
+        rrc-TransactionIdentifier 0,
+        criticalExtensions c1 : ueCapabilityEnquiry-r8 : 
+              ue-CapabilityRequest 
+                eutra
+               ,
+              nonCriticalExtension 
+                nonCriticalExtension 
+                  requestedFrequencyBands-r11 
+                    41,
+                    26,
+                    25
+                   ,
+                  nonCriticalExtension 
+                    nonCriticalExtension 
+                      nonCriticalExtension 
+                        requestedFreqBandsNR-MRDC-r15 '0060A00C81880500'H
+[5G-NR RRC_F40 Data] : 
+value FreqBandList ::= 
+  bandInformationEUTRA : 
+      bandEUTRA 41
+     ,
+  bandInformationEUTRA : 
+      bandEUTRA 26
+     ,
+  bandInformationEUTRA : 
+      bandEUTRA 25
+     ,
+  bandInformationNR : 
+      bandNR 41
+
+L3 Data in Hex : 
+    38 20 1C 8A 06 46 01 60 80 06
+    0A 00 C8 18 80 50 00</pre></body></html>

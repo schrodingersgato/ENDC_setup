@@ -1,0 +1,354 @@
+
+<!-- saved from url=(0116)http://experience.awardsolutions.com/interactive_callflows/EN_DC_Setup/Drive_Logs/Log2_UE_Capability_Information.txt -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Copyright © 2019 Accuver Americas, Inc. All Rights Reserved
+# The data in this file is derived from log(s) provided through
+# the courtesy of Accuver Americas, Inc. under special permission
+# to Award Solutions, Inc. 
+
+PC Timestamp: [ 2019  Jun  20    15:06:11.073 ]
+
+
+Version_number : 26
+RRC_VER_Major : 15
+RRC_VER_minor : 4.0
+NR_RRC_VER_Major : 15
+NR_RRC_VER_minor : 4.1
+RB_ID : 1
+PHYSICAL_CELL_ID : 85
+FREQ : 41292
+Subframe_number : N/A
+System_frame_number : N/A
+PDU_NUM : UL_DCCH Message
+SIB_Mask_in_SI : 0x00000000
+ENCODED_MSG_LEN : 156
+
+
+value UL-DCCH-Message ::= 
+  message c1 : ueCapabilityInformation : 
+        rrc-TransactionIdentifier 0,
+        criticalExtensions c1 : ueCapabilityInformation-r8 : 
+              ue-CapabilityRAT-ContainerList 
+                  rat-Type nr,
+                  ueCapabilityRAT-Container 'E100000001497E0302000001404807060E220C000213601073E420F0008240311000A05851A0219434088107418604C04416C9014020018073E420F0008240E0E02203C80F0060A00C818805189BC010240000001200000401E54DE50D0041000004186004000050618001D2A99A5130'H
+                 ,
+                  rat-Type eutra-nr,
+                  ueCapabilityRAT-Container '011C042165061C2800000000C1401903100A0041101053A700008100402010040C008018020040'H
+'
+[UE CAPABILITY INFORMATION] : 
+[5G-NR RRC_F40 Data] : 
+value UE-NR-Capability ::= 
+  accessStratumRelease rel15,
+  pdcp-Parameters 
+    supportedROHC-Profiles 
+      profile0x0000 FALSE,
+      profile0x0001 FALSE,
+      profile0x0002 FALSE,
+      profile0x0003 FALSE,
+      profile0x0004 FALSE,
+      profile0x0006 FALSE,
+      profile0x0101 FALSE,
+      profile0x0102 FALSE,
+      profile0x0103 FALSE,
+      profile0x0104 FALSE
+     ,
+    maxNumberROHC-ContextSessions cs2
+   ,
+  rlc-Parameters 
+    um-WithLongSN supported
+   ,
+  mac-Parameters 
+    mac-ParametersXDD-Diff 
+      logicalChannelSR-DelayTimer supported,
+      multipleSR-Configurations supported
+   ,
+  phy-Parameters 
+    phy-ParametersCommon 
+      dynamicHARQ-ACK-Codebook supported,
+      semiStaticHARQ-ACK-Codebook supported,
+      pdsch-MappingTypeA supported,
+      maxLayersMIMO-Indication supported
+     ,
+    phy-ParametersXDD-Diff 
+      twoDifferentTPC-Loop-PUSCH supported,
+      twoDifferentTPC-Loop-PUCCH supported
+     ,
+    phy-ParametersFRX-Diff 
+      supportedDMRS-TypeDL type1,
+      supportedDMRS-TypeUL type1,
+      pucch-F2-WithFH supported,
+      pucch-F3-WithFH supported,
+      pucch-F4-WithFH supported,
+      uci-CodeBlockSegmentation supported,
+      pusch-LBRM supported,
+      twoDifferentTPC-Loop-PUSCH supported,
+      twoDifferentTPC-Loop-PUCCH supported,
+      csi-RS-IM-ReceptionForFeedback 
+        maxConfigNumberNZP-CSI-RS-PerCC 8,
+        maxConfigNumberPortsAcrossNZP-CSI-RS-PerCC 64,
+        maxConfigNumberCSI-IM-PerCC n4,
+        maxNumberSimultaneousNZP-CSI-RS-PerCC 5,
+        totalNumberPortsSimultaneousNZP-CSI-RS-PerCC 32
+       ,
+      csi-ReportFramework 
+        maxNumberPeriodicCSI-PerBWP-ForCSI-Report 1,
+        maxNumberAperiodicCSI-PerBWP-ForCSI-Report 1,
+        maxNumberSemiPersistentCSI-PerBWP-ForCSI-Report 0,
+        maxNumberPeriodicCSI-PerBWP-ForBeamReport 1,
+        maxNumberAperiodicCSI-PerBWP-ForBeamReport 1,
+        maxNumberAperidicCSI-triggeringStatePerCC n63,
+        maxNumberSemiPersistentCSI-PerBWP-ForBeamReport 0,
+        simultaneousCSI-ReportsPerCC 5
+       ,
+      mux-SR-HARQ-ACK-CSI-PUCCH-OncePerSlot 
+        sameSymbol supported
+       ,
+      oneFL-DMRS-TwoAdditionalDMRS-UL supported
+     ,
+    phy-ParametersFR1 
+      pdsch-256QAM-FR1 supported,
+      pdsch-RE-MappingFR1-PerSymbol n10
+     ,
+    phy-ParametersFR2 
+      pdsch-RE-MappingFR2-PerSymbol n6
+   ,
+  rf-Parameters 
+    supportedBandListNR 
+        bandNR 41,
+        mimo-ParametersPerBand 
+          tci-StatePDSCH 
+            maxNumberConfiguredTCIstatesPerCC n16,
+            maxNumberActiveTCI-PerBWP n1
+           ,
+          pusch-TransCoherence nonCoherent,
+          maxNumberRxTxBeamSwitchDL 
+            scs-30kHz n14
+           ,
+          maxNumberSSB-BFD 2,
+          maxNumberCSI-RS-SSB-CBD 8,
+          supportedSRS-Resources 
+            maxNumberAperiodicSRS-PerBWP n4,
+            maxNumberAperiodicSRS-PerBWP-PerSlot 1,
+            maxNumberPeriodicSRS-PerBWP n8,
+            maxNumberPeriodicSRS-PerBWP-PerSlot 1,
+            maxNumberSemiPersitentSRS-PerBWP n8,
+            maxNumberSP-SRS-PerBWP-PerSlot 1,
+            maxNumberSRS-Ports-PerResource n1
+           ,
+          beamReportTiming 
+            scs-30kHz sym28
+           ,
+          beamManagementSSB-CSI-RS 
+            maxNumberSSB-CSI-RS-ResourceOneTx n8,
+            maxNumberCSI-RS-Resource n0,
+            maxNumberCSI-RS-ResourceTwoTx n0,
+            supportedCSI-RS-Density three,
+            maxNumberAperiodicCSI-RS-Resource n4
+           ,
+          codebookParameters 
+            type1 
+              singlePanel 
+                supportedCSI-RS-ResourceList 
+                    maxNumberTxPortsPerResource p8,
+                    maxNumberResourcesPerBand 1,
+                    totalNumberTxPortsPerBand 8
+                 ,
+                modes mode1,
+                maxNumberCSI-RS-PerResourceSet 1
+           ,
+          csi-RS-IM-ReceptionForFeedback 
+            maxConfigNumberNZP-CSI-RS-PerCC 8,
+            maxConfigNumberPortsAcrossNZP-CSI-RS-PerCC 64,
+            maxConfigNumberCSI-IM-PerCC n4,
+            maxNumberSimultaneousNZP-CSI-RS-PerCC 5,
+            totalNumberPortsSimultaneousNZP-CSI-RS-PerCC 32
+           ,
+          csi-ReportFramework 
+            maxNumberPeriodicCSI-PerBWP-ForCSI-Report 1,
+            maxNumberAperiodicCSI-PerBWP-ForCSI-Report 1,
+            maxNumberSemiPersistentCSI-PerBWP-ForCSI-Report 0,
+            maxNumberPeriodicCSI-PerBWP-ForBeamReport 1,
+            maxNumberAperiodicCSI-PerBWP-ForBeamReport 1,
+            maxNumberAperidicCSI-triggeringStatePerCC n63,
+            maxNumberSemiPersistentCSI-PerBWP-ForBeamReport 0,
+            simultaneousCSI-ReportsPerCC 5
+           ,
+          csi-RS-ForTracking 
+            maxBurstLength 2,
+            maxSimultaneousResourceSetsPerCC 1,
+            maxConfiguredResourceSetsPerCC 8,
+            maxConfiguredResourceSetsAllCC 8
+         ,
+        multipleTCI supported,
+        ue-PowerClass pc3,
+        channelBWs-DL-v1530 fr1 : 
+            scs-30kHz '00000011 11'B
+           ,
+        channelBWs-UL-v1530 fr1 : 
+            scs-30kHz '00000011 11'B
+     ,
+    appliedFreqBandListFilter 
+      bandInformationEUTRA : 
+          bandEUTRA 41
+         ,
+      bandInformationEUTRA : 
+          bandEUTRA 26
+         ,
+      bandInformationEUTRA : 
+          bandEUTRA 25
+         ,
+      bandInformationNR : 
+          bandNR 41
+   ,
+  measAndMobParameters 
+    measAndMobParametersCommon 
+      ssb-RLM supported
+     ,
+    measAndMobParametersXDD-Diff 
+      intraAndInterF-MeasAndReport supported,
+      eventA-MeasAndReport supported
+   ,
+  featureSets 
+    featureSetsDownlink 
+        featureSetListPerDownlinkCC 
+          1
+         ,
+        type1-3-CSS supported,
+        ue-SpecificUL-DL-Assignment supported
+       ,
+        featureSetListPerDownlinkCC 
+          2
+         ,
+        type1-3-CSS supported,
+        ue-SpecificUL-DL-Assignment supported
+     ,
+    featureSetsDownlinkPerCC 
+        supportedSubcarrierSpacingDL kHz30,
+        supportedBandwidthDL fr1 : mhz100,
+        channelBW-90mhz supported,
+        maxNumberMIMO-LayersPDSCH fourLayers,
+        supportedModulationOrderDL qam256
+       ,
+        supportedSubcarrierSpacingDL kHz30,
+        supportedBandwidthDL fr1 : mhz60,
+        channelBW-90mhz supported,
+        maxNumberMIMO-LayersPDSCH fourLayers,
+        supportedModulationOrderDL qam256
+     ,
+    featureSetsUplink 
+        featureSetListPerUplinkCC 
+          1
+         ,
+        supportedSRS-Resources 
+          maxNumberAperiodicSRS-PerBWP n4,
+          maxNumberAperiodicSRS-PerBWP-PerSlot 1,
+          maxNumberPeriodicSRS-PerBWP n8,
+          maxNumberPeriodicSRS-PerBWP-PerSlot 1,
+          maxNumberSemiPersitentSRS-PerBWP n8,
+          maxNumberSP-SRS-PerBWP-PerSlot 1,
+          maxNumberSRS-Ports-PerResource n1
+       ,
+        featureSetListPerUplinkCC 
+          2
+         ,
+        supportedSRS-Resources 
+          maxNumberAperiodicSRS-PerBWP n4,
+          maxNumberAperiodicSRS-PerBWP-PerSlot 1,
+          maxNumberPeriodicSRS-PerBWP n8,
+          maxNumberPeriodicSRS-PerBWP-PerSlot 1,
+          maxNumberSemiPersitentSRS-PerBWP n8,
+          maxNumberSP-SRS-PerBWP-PerSlot 1,
+          maxNumberSRS-Ports-PerResource n1
+     ,
+    featureSetsUplinkPerCC 
+        supportedSubcarrierSpacingUL kHz30,
+        supportedBandwidthUL fr1 : mhz100,
+        channelBW-90mhz supported,
+        mimo-CB-PUSCH 
+          maxNumberMIMO-LayersCB-PUSCH oneLayer,
+          maxNumberSRS-ResourcePerSet 2
+         ,
+        supportedModulationOrderUL qam64
+       ,
+        supportedSubcarrierSpacingUL kHz30,
+        supportedBandwidthUL fr1 : mhz60,
+        channelBW-90mhz supported,
+        mimo-CB-PUSCH 
+          maxNumberMIMO-LayersCB-PUSCH oneLayer,
+          maxNumberSRS-ResourcePerSet 2
+         ,
+        supportedModulationOrderUL qam64
+[5G-NR RRC_F40 Data] : 
+value UE-MRDC-Capability ::= 
+  rf-ParametersMRDC 
+    supportedBandCombinationList 
+        bandList 
+          eutra : 
+              bandEUTRA 41,
+              ca-BandwidthClassDL-EUTRA d,
+              ca-BandwidthClassUL-EUTRA a
+             ,
+          nr : 
+              bandNR 41,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+         ,
+        featureSetCombination 0,
+        powerClass-v1530 pc2
+     ,
+    appliedFreqBandListFilter 
+      bandInformationEUTRA : 
+          bandEUTRA 41
+         ,
+      bandInformationEUTRA : 
+          bandEUTRA 26
+         ,
+      bandInformationEUTRA : 
+          bandEUTRA 25
+         ,
+      bandInformationNR : 
+          bandNR 41
+     ,
+    supportedBandCombinationList-v1540 
+        bandList-v1540 
+            srs-TxSwitch-v1540 
+              supportedSRS-TxPortSwitch notSupported
+           ,
+            srs-TxSwitch-v1540 
+              supportedSRS-TxPortSwitch notSupported
+   ,
+  featureSetCombinations 
+        eutra : 
+            downlinkSetEUTRA 1,
+            uplinkSetEUTRA 1
+           ,
+        eutra : 
+            downlinkSetEUTRA 2,
+            uplinkSetEUTRA 1
+       ,
+        nr : 
+            downlinkSetNR 1,
+            uplinkSetNR 1
+           ,
+        nr : 
+            downlinkSetNR 2,
+            uplinkSetNR 2
+
+
+L3 Data in Hex : 
+    38 02 57 0E 10 00 00 00 14 97
+    E0 30 20 00 00 14 04 80 70 60
+    E2 20 C0 00 21 36 01 07 3E 42
+    0F 00 08 24 03 11 00 0A 05 85
+    1A 02 19 43 40 88 10 74 18 60
+    4C 04 41 6C 90 14 02 00 18 07
+    3E 42 0F 00 08 24 0E 0E 02 20
+    3C 80 F0 06 0A 00 C8 18 80 51
+    89 BC 01 02 40 00 00 01 20 00
+    00 40 1E 54 DE 50 D0 04 10 00
+    00 41 86 00 40 00 05 06 18 00
+    1D 2A 99 A5 13 06 27 01 1C 04
+    21 65 06 1C 28 00 00 00 00 C1
+    40 19 03 10 0A 00 41 10 10 53
+    A7 00 00 81 00 40 20 10 04 0C
+    00 80 18 02 00 40
+</pre></body></html>

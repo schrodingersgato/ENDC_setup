@@ -1,0 +1,1716 @@
+
+<!-- saved from url=(0117)http://experience.awardsolutions.com/interactive_callflows/EN_DC_Setup/Drive_Logs/Log2a_UE_Capability_Information.txt -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Copyright © 2019 Accuver Americas, Inc. All Rights Reserved
+# The data in this file is derived from log(s) provided through
+# the courtesy of Accuver Americas, Inc. under special permission
+# to Award Solutions, Inc. 
+
+[ 2019  Jun  20    15:06:11.029186 ] ueCapabilityInformation
+Chipset timestamp: 2019-06-20 15:06:50.759, CFN : 54
+Dual Mode Index : 0
+SIM Index : 1
+Version_number : 26
+RRC_VER_Major : 15
+RRC_VER_minor : 4.0
+NR_RRC_VER_Major : 15
+NR_RRC_VER_minor : 4.1
+RB_ID : 1
+PHYSICAL_CELL_ID : 85
+FREQ : 41292
+Subframe_number : N/A
+System_frame_number : N/A
+PDU_NUM : UL_DCCH Message
+SIB_Mask_in_SI : 0x00000000
+ENCODED_MSG_LEN : 311
+
+value UL-DCCH-Message ::= 
+  message c1 : ueCapabilityInformation : 
+        rrc-TransactionIdentifier 0,
+        criticalExtensions c1 : ueCapabilityInformation-r8 : 
+              ue-CapabilityRAT-ContainerList 
+                  rat-Type eutra,
+                  ueCapabilityRAT-Container 'DDB80507A0201182DF837E1E3FF9DFFFE3FF9DFFFE3FF9DFFFE3FF9DFFFE3FF9DFFFE3FF9DFFFE3FF9DFFFE3FF9DFFFFFC3FFFFA388008C870CA74A82001281000944A8FCA3FC000000083FC7FFFF982FF0FFFFE5E38202831FF00000002C5C00A004801801400C00C00C009683EA831C00581D000082062000200182000820660002001960008007F8002081860008207F8002001D0000920740082681D00009A074008248B8FFE77FFF8FFE77FFF8FFE77FFF8FFE77FFF8FFE77FFF8FFE77FFF8FFE77FFF8FFE77FFF8FFE77FFF8FFE77FFF8FFE77FFF8FFE77FFF10240000FC82048000043FEC000016001C580000000000080800083000000004C1007CE08A06462BCD0200A47FFFFCD29778A01F0008401303A8001249000020005104B8A00050F010810400810410A3200000220000'H
+'
+[UE CAPABILITY INFORMATION] : 
+value UE-EUTRA-Capability ::= 
+  accessStratumRelease rel15,
+  ue-Category 4,
+  pdcp-Parameters 
+    supportedROHC-Profiles 
+      profile0x0001-r15 TRUE,
+      profile0x0002-r15 TRUE,
+      profile0x0003-r15 FALSE,
+      profile0x0004-r15 FALSE,
+      profile0x0006-r15 FALSE,
+      profile0x0101-r15 FALSE,
+      profile0x0102-r15 FALSE,
+      profile0x0103-r15 FALSE,
+      profile0x0104-r15 FALSE
+     ,
+    maxNumberROHC-ContextSessions cs24
+   ,
+  phyLayerParameters 
+    ue-TxAntennaSelectionSupported FALSE,
+    ue-SpecificRefSigsSupported FALSE
+   ,
+  rf-Parameters 
+    supportedBandListEUTRA 
+        bandEUTRA 41,
+        halfDuplex FALSE
+       ,
+        bandEUTRA 5,
+        halfDuplex FALSE
+       ,
+        bandEUTRA 2,
+        halfDuplex FALSE
+       ,
+        bandEUTRA 13,
+        halfDuplex FALSE
+       ,
+        bandEUTRA 12,
+        halfDuplex FALSE
+       ,
+        bandEUTRA 64,
+        halfDuplex FALSE
+       ,
+        bandEUTRA 4,
+        halfDuplex FALSE
+       ,
+        bandEUTRA 64,
+        halfDuplex FALSE
+   ,
+  measParameters 
+    bandListEUTRA 
+        interFreqBandList 
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+         ,
+        interRAT-BandList 
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+       ,
+        interFreqBandList 
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+         ,
+        interRAT-BandList 
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+       ,
+        interFreqBandList 
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+         ,
+        interRAT-BandList 
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+       ,
+        interFreqBandList 
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+         ,
+        interRAT-BandList 
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+       ,
+        interFreqBandList 
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+         ,
+        interRAT-BandList 
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+       ,
+        interFreqBandList 
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+         ,
+        interRAT-BandList 
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+       ,
+        interFreqBandList 
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+         ,
+        interRAT-BandList 
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+       ,
+        interFreqBandList 
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+           ,
+            interFreqNeedForGaps TRUE
+         ,
+        interRAT-BandList 
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+           ,
+            interRAT-NeedForGaps TRUE
+   ,
+  featureGroupIndicators '11111111 00001111 11111111 11111110'B,
+  interRAT-Parameters 
+    utraFDD 
+      supportedBandListUTRA-FDD 
+        bandI,
+        bandII,
+        bandIV,
+        bandV,
+        bandVIII
+     ,
+    geran 
+      supportedBandListGERAN 
+        gsm850,
+        gsm900E,
+        gsm1800,
+        gsm1900
+       ,
+      interRAT-PS-HO-ToGERAN FALSE
+     ,
+    cdma2000-HRPD 
+      supportedBandListHRPD 
+        bc0,
+        bc1,
+        bc10
+       ,
+      tx-ConfigHRPD single,
+      rx-ConfigHRPD single
+     ,
+    cdma2000-1xRTT 
+      supportedBandList1XRTT 
+        bc0,
+        bc1,
+        bc10
+       ,
+      tx-Config1XRTT single,
+      rx-Config1XRTT single
+   ,
+  nonCriticalExtension 
+    phyLayerParameters-v920 
+      enhancedDualLayerTDD-r9 supported
+     ,
+    interRAT-ParametersGERAN-v920 
+      e-RedirectionGERAN-r9 supported
+     ,
+    interRAT-ParametersUTRA-v920 
+      e-RedirectionUTRA-r9 supported
+     ,
+    csg-ProximityIndicationParameters-r9 
+     ,
+    neighCellSI-AcquisitionParameters-r9 
+      intraFreqSI-AcquisitionForHO-r9 supported,
+      interFreqSI-AcquisitionForHO-r9 supported,
+      utran-SI-AcquisitionForHO-r9 supported
+     ,
+    son-Parameters-r9 
+      rach-Report-r9 supported
+     ,
+    nonCriticalExtension 
+      lateNonCriticalExtension 
+        CONTAINING
+          featureGroupIndRel9Add-r9 '11110000 00000000 00000000 00000000'B,
+          fdd-Add-UE-EUTRA-Capabilities-r9 
+            featureGroupIndicators-r9 '11111111 00011111 11111111 11111110'B
+           ,
+          tdd-Add-UE-EUTRA-Capabilities-r9 
+            phyLayerParameters-r9 
+              ue-TxAntennaSelectionSupported TRUE,
+              ue-SpecificRefSigsSupported FALSE
+             ,
+            featureGroupIndicators-r9 '11111111 00001111 11111111 11111110'B
+           ,
+          nonCriticalExtension 
+            nonCriticalExtension 
+              nonCriticalExtension 
+                rf-Parameters-v9e0 
+                  supportedBandListEUTRA-v9e0 
+                     ,
+                     ,
+                     ,
+                     ,
+                     ,
+                      bandEUTRA-v9e0 66
+                     ,
+                     ,
+                      bandEUTRA-v9e0 71
+                 ,
+                nonCriticalExtension 
+                  nonCriticalExtension 
+                    otdoa-PositioningCapabilities-r10 
+                      otdoa-UE-Assisted-r10 supported,
+                      interFreqRSTD-Measurement-r10 supported
+                     ,
+                    nonCriticalExtension 
+                      rf-Parameters-v10f0 
+                        modifiedMPR-Behavior-r10 '11000000 00000000 00000000 00000000'B
+                       ,
+                      nonCriticalExtension 
+                        rf-Parameters-v10i0 
+                          supportedBandCombination-v10i0 
+                              bandParameterList-v10i0 
+                                  bandParametersDL-v10i0 
+                                      fourLayerTM3-TM4-r10 supported
+                             ,
+                             ,
+                              bandParameterList-v10i0 
+                                  bandParametersDL-v10i0 
+                                      fourLayerTM3-TM4-r10 supported
+                             ,
+                             ,
+                             ,
+                              bandParameterList-v10i0 
+                                  bandParametersDL-v10i0 
+                                      fourLayerTM3-TM4-r10 supported
+                             ,
+                              bandParameterList-v10i0 
+                                  bandParametersDL-v10i0 
+                                      fourLayerTM3-TM4-r10 supported
+                             ,
+                             ,
+                              bandParameterList-v10i0 
+                                  bandParametersDL-v10i0 
+                                      fourLayerTM3-TM4-r10 supported
+                             ,
+                              bandParameterList-v10i0 
+                                  bandParametersDL-v10i0 
+                                      fourLayerTM3-TM4-r10 supported
+                             ,
+                              bandParameterList-v10i0 
+                                  bandParametersDL-v10i0 
+                                      fourLayerTM3-TM4-r10 supported
+                             ,
+                              bandParameterList-v10i0 
+                                  bandParametersDL-v10i0 
+                                      fourLayerTM3-TM4-r10 supported
+                         ,
+                        nonCriticalExtension 
+                          nonCriticalExtension 
+                            nonCriticalExtension 
+                              rf-Parameters-v12b0 
+                                maxLayersMIMO-Indication-r12 supported
+         ,
+      nonCriticalExtension 
+        ue-Category-v1020 7,
+        phyLayerParameters-v1020 
+          multiClusterPUSCH-WithinCC-r10 supported,
+          nonContiguousUL-RA-WithinCC-List-r10 
+             ,
+             ,
+             ,
+             ,
+             ,
+             ,
+             ,
+         ,
+        rf-Parameters-v1020 
+          supportedBandCombination-r10 
+                bandEUTRA-r10 41,
+                bandParametersUL-r10 
+                    ca-BandwidthClassUL-r10 a
+                 ,
+                bandParametersDL-r10 
+                    ca-BandwidthClassDL-r10 a,
+                    supportedMIMO-CapabilityDL-r10 fourLayers
+             ,
+                bandEUTRA-r10 5,
+                bandParametersUL-r10 
+                    ca-BandwidthClassUL-r10 a
+                 ,
+                bandParametersDL-r10 
+                    ca-BandwidthClassDL-r10 a,
+                    supportedMIMO-CapabilityDL-r10 twoLayers
+             ,
+                bandEUTRA-r10 2,
+                bandParametersUL-r10 
+                    ca-BandwidthClassUL-r10 a
+                 ,
+                bandParametersDL-r10 
+                    ca-BandwidthClassDL-r10 a,
+                    supportedMIMO-CapabilityDL-r10 fourLayers
+             ,
+                bandEUTRA-r10 13,
+                bandParametersUL-r10 
+                    ca-BandwidthClassUL-r10 a
+                 ,
+                bandParametersDL-r10 
+                    ca-BandwidthClassDL-r10 a,
+                    supportedMIMO-CapabilityDL-r10 twoLayers
+             ,
+                bandEUTRA-r10 12,
+                bandParametersUL-r10 
+                    ca-BandwidthClassUL-r10 a
+                 ,
+                bandParametersDL-r10 
+                    ca-BandwidthClassDL-r10 a,
+                    supportedMIMO-CapabilityDL-r10 twoLayers
+             ,
+                bandEUTRA-r10 64,
+                bandParametersUL-r10 
+                    ca-BandwidthClassUL-r10 a
+                 ,
+                bandParametersDL-r10 
+                    ca-BandwidthClassDL-r10 a,
+                    supportedMIMO-CapabilityDL-r10 fourLayers
+             ,
+                bandEUTRA-r10 4,
+                bandParametersUL-r10 
+                    ca-BandwidthClassUL-r10 a
+                 ,
+                bandParametersDL-r10 
+                    ca-BandwidthClassDL-r10 a,
+                    supportedMIMO-CapabilityDL-r10 fourLayers
+             ,
+                bandEUTRA-r10 64,
+                bandParametersUL-r10 
+                    ca-BandwidthClassUL-r10 a
+                 ,
+                bandParametersDL-r10 
+                    ca-BandwidthClassDL-r10 a,
+                    supportedMIMO-CapabilityDL-r10 twoLayers
+             ,
+                bandEUTRA-r10 41,
+                bandParametersUL-r10 
+                    ca-BandwidthClassUL-r10 a
+                 ,
+                bandParametersDL-r10 
+                    ca-BandwidthClassDL-r10 c,
+                    supportedMIMO-CapabilityDL-r10 fourLayers
+             ,
+                bandEUTRA-r10 41,
+                bandParametersUL-r10 
+                    ca-BandwidthClassUL-r10 c
+                 ,
+                bandParametersDL-r10 
+                    ca-BandwidthClassDL-r10 d,
+                    supportedMIMO-CapabilityDL-r10 fourLayers
+             ,
+                bandEUTRA-r10 41,
+                bandParametersUL-r10 
+                    ca-BandwidthClassUL-r10 a
+                 ,
+                bandParametersDL-r10 
+                    ca-BandwidthClassDL-r10 d,
+                    supportedMIMO-CapabilityDL-r10 fourLayers
+             ,
+                bandEUTRA-r10 41,
+                bandParametersUL-r10 
+                    ca-BandwidthClassUL-r10 c
+                 ,
+                bandParametersDL-r10 
+                    ca-BandwidthClassDL-r10 c,
+                    supportedMIMO-CapabilityDL-r10 fourLayers
+         ,
+        measParameters-v1020 
+          bandCombinationListEUTRA-r10 
+              interFreqBandList 
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+               ,
+              interRAT-BandList 
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+             ,
+              interFreqBandList 
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+               ,
+              interRAT-BandList 
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+             ,
+              interFreqBandList 
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+               ,
+              interRAT-BandList 
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+             ,
+              interFreqBandList 
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+               ,
+              interRAT-BandList 
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+             ,
+              interFreqBandList 
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+               ,
+              interRAT-BandList 
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+             ,
+              interFreqBandList 
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+               ,
+              interRAT-BandList 
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+             ,
+              interFreqBandList 
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+               ,
+              interRAT-BandList 
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+             ,
+              interFreqBandList 
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+               ,
+              interRAT-BandList 
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+             ,
+              interFreqBandList 
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+               ,
+              interRAT-BandList 
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+             ,
+              interFreqBandList 
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+               ,
+              interRAT-BandList 
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+             ,
+              interFreqBandList 
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+               ,
+              interRAT-BandList 
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+             ,
+              interFreqBandList 
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+                 ,
+                  interFreqNeedForGaps TRUE
+               ,
+              interRAT-BandList 
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+                 ,
+                  interRAT-NeedForGaps TRUE
+         ,
+        featureGroupIndRel10-r10 '00010000 00100100 00000000 00000000'B,
+        ue-BasedNetwPerfMeasParameters-r10 
+          loggedMeasurementsIdle-r10 supported,
+          standaloneGNSS-Location-r10 supported
+         ,
+        nonCriticalExtension 
+          fdd-Add-UE-EUTRA-Capabilities-v1060 
+            featureGroupIndRel10-v1060 '00010000 00100100 00000000 00000000'B
+           ,
+          tdd-Add-UE-EUTRA-Capabilities-v1060 
+            featureGroupIndRel10-v1060 '00111111 11101100 00000000 00000000'B
+           ,
+          rf-Parameters-v1060 
+            supportedBandCombinationExt-r10 
+               ,
+               ,
+               ,
+               ,
+               ,
+               ,
+               ,
+               ,
+               ,
+               ,
+               ,
+           ,
+          nonCriticalExtension 
+            rf-Parameters-v1090 
+              supportedBandCombination-v1090 
+                 ,
+                 ,
+                 ,
+                 ,
+                 ,
+                    bandEUTRA-v1090 66
+                 ,
+                 ,
+                    bandEUTRA-v1090 71
+                 ,
+                 ,
+                 ,
+                 ,
+             ,
+            nonCriticalExtension 
+              pdcp-Parameters-v1130 
+                pdcp-SN-Extension-r11 supported
+               ,
+              phyLayerParameters-v1130 
+                tdd-SpecialSubframe-r11 supported
+               ,
+              rf-Parameters-v1130 
+               ,
+              measParameters-v1130 
+               ,
+              interRAT-ParametersCDMA2000-v1130 
+               ,
+              otherParameters-r11 
+               ,
+              nonCriticalExtension 
+                ue-Category-v1170 10,
+                nonCriticalExtension 
+                  rf-Parameters-v1180 
+                    freqBandRetrieval-r11 supported,
+                    requestedBands-r11 
+                      41,
+                      26,
+                      25
+                   ,
+                  mbms-Parameters-r11 
+                    mbms-SCell-r11 supported
+                   ,
+                  nonCriticalExtension 
+                    ue-Category-v11a0 12,
+                    nonCriticalExtension 
+                      phyLayerParameters-v1250 
+                        discoverySignalsInDeactSCell-r12 supported
+                       ,
+                      rf-Parameters-v1250 
+                        supportedBandListEUTRA-v1250 
+                            dl-256QAM-r12 supported,
+                            ul-64QAM-r12 supported
+                           ,
+                            dl-256QAM-r12 supported,
+                            ul-64QAM-r12 supported
+                           ,
+                            dl-256QAM-r12 supported,
+                            ul-64QAM-r12 supported
+                           ,
+                            dl-256QAM-r12 supported,
+                            ul-64QAM-r12 supported
+                           ,
+                            dl-256QAM-r12 supported,
+                            ul-64QAM-r12 supported
+                           ,
+                            dl-256QAM-r12 supported,
+                            ul-64QAM-r12 supported
+                           ,
+                            dl-256QAM-r12 supported,
+                            ul-64QAM-r12 supported
+                           ,
+                            dl-256QAM-r12 supported,
+                            ul-64QAM-r12 supported
+                         ,
+                        freqBandPriorityAdjustment-r12 supported
+                       ,
+                      ue-CategoryDL-r12 12,
+                      ue-CategoryUL-r12 13,
+                      measParameters-v1250 
+                        incMonEUTRA-r12 supported,
+                        extendedMaxMeasId-r12 supported,
+                        crs-DiscoverySignalsMeas-r12 supported
+                       ,
+                      nonCriticalExtension 
+                        ue-CategoryDL-v1260 16,
+                        nonCriticalExtension 
+                          nonCriticalExtension 
+                            phyLayerParameters-v1280 
+                              alternativeTBS-Indices-r12 supported
+                             ,
+                            nonCriticalExtension 
+                              pdcp-Parameters-v1310 
+                                pdcp-SN-Extension-18bits-r13 supported
+                               ,
+                              rlc-Parameters-v1310 
+                                extendedRLC-SN-SO-Field-r13 supported
+                               ,
+                              phyLayerParameters-v1310 
+                                aperiodicCSI-Reporting-r13 '01'B,
+                                codebook-HARQ-ACK-r13 '00'B
+                               ,
+                              measParameters-v1310 
+                                extendedMaxObjectId-r13 supported
+                               ,
+                              interRAT-ParametersWLAN-r13 
+                               ,
+                              wlan-IW-Parameters-v1310 
+                               ,
+                              lwip-Parameters-r13 
+                               ,
+                              nonCriticalExtension 
+                                rf-Parameters-v1320 
+                                  supportedBandListEUTRA-v1320 
+                                      ue-PowerClass-N-r13 class2
+                                     ,
+                                     ,
+                                     ,
+                                     ,
+                                     ,
+                                     ,
+                                     ,
+                                 ,
+                                nonCriticalExtension 
+                                  ue-CategoryDL-v1330 18,
+                                  nonCriticalExtension 
+                                    nonCriticalExtension 
+                                      ce-Parameters-v1350 
+                                       ,
+                                      nonCriticalExtension 
+                                        nonCriticalExtension 
+                                          phyLayerParameters-v1430 
+                                            alternativeTBS-Index-r14 supported
+                                           ,
+                                          rlc-Parameters-v1430 
+                                            extendedPollByte-r14 supported
+                                           ,
+                                          otherParameters-v1430 
+                                           ,
+                                          ce-Parameters-v1430 
+                                           ,
+                                          nonCriticalExtension 
+                                            lwa-Parameters-v1440 
+                                             ,
+                                            mac-Parameters-v1440 
+                                             ,
+                                            nonCriticalExtension 
+                                              otherParameters-v1450 
+                                               ,
+                                              nonCriticalExtension 
+                                                otherParameters-v1460 
+                                                 ,
+                                                nonCriticalExtension 
+                                                  irat-ParametersNR-r15 
+                                                    en-DC-r15 supported,
+                                                    supportedBandListEN-DC-r15 
+                                                        bandNR-r15 41
+                                                   ,
+                                                  featureSetsEUTRA-r15 
+                                                    featureSetsDL-r15 
+                                                        featureSetPerCC-ListDL-r15 
+                                                          1,
+                                                          1,
+                                                          0
+                                                       ,
+                                                        featureSetPerCC-ListDL-r15 
+                                                          1,
+                                                          1,
+                                                          1
+                                                     ,
+                                                    featureSetsDL-PerCC-r15 
+                                                        supportedMIMO-CapabilityDL-MRDC-r15 twoLayers
+                                                       ,
+                                                        fourLayerTM3-TM4-r15 supported,
+                                                        supportedMIMO-CapabilityDL-MRDC-r15 fourLayers
+                                                     ,
+                                                    featureSetsUL-r15 
+                                                        featureSetPerCC-ListUL-r15 
+                                                          0
+                                                     ,
+                                                    featureSetsUL-PerCC-r15 
+                                                       ,
+                                                        ul-256QAM-r15 supported
+                                                   ,
+                                                  pdcp-ParametersNR-r15 
+                                                    rohc-Profiles-r15 
+                                                      profile0x0001-r15 FALSE,
+                                                      profile0x0002-r15 FALSE,
+                                                      profile0x0003-r15 FALSE,
+                                                      profile0x0004-r15 FALSE,
+                                                      profile0x0006-r15 FALSE,
+                                                      profile0x0101-r15 FALSE,
+                                                      profile0x0102-r15 FALSE,
+                                                      profile0x0103-r15 FALSE,
+                                                      profile0x0104-r15 FALSE
+                                                     ,
+                                                    rohc-ProfilesUL-Only-r15 
+                                                      profile0x0006-r15 FALSE
+  [Feature Group Indicators] : 
+    pc_FeatrGrp_1 : support
+      - Intra-subframe frequency hopping for PUSCH scheduled by UL grant
+      - DCI format 3a (TPC commands for PUCCH and PUSCH with single bit power adjustments)
+      - PDSCH transmission mode 5
+      - Aperiodic CQI/PMI/RI reporting on PUSCH: Mode 2-0 - UE selected subband CQI without PMI
+      - Aperiodic CQI/PMI/RI reporting on PUSCH: Mode 2-2 - UE selected subband CQI with multiple PMI
+    pc_FeatrGrp_2 : support
+      - Simultaneous CQI and ACK/NACK on PUCCH, i.e. PUCCH format 2a and 2b
+      - Absolute TPC command for PUSCH
+      - Resource allocation type 1 for PDSCH
+      - Periodic CQI/PMI/RI reporting on PUCCH: Mode 2-0 - UE selected subband CQI without PMI
+      - Periodic CQI/PMI/RI reporting on PUCCH: Mode 2-1 - UE selected subband CQI with single PMI
+    pc_FeatrGrp_3 : support
+      - 5bit RLC UM SN
+      - 7bit PDCP SN
+    pc_FeatrGrp_4 : support
+      - Short DRX cycle
+    pc_FeatrGrp_5 : support
+      - Long DRX cycle
+      - DRX command MAC control element
+    pc_FeatrGrp_6 : support
+      - Prioritised bit rate
+    pc_FeatrGrp_7 : support
+      - RLC UM
+    pc_FeatrGrp_8 : support
+      - EUTRA RRC_CONNECTED to UTRA CELL_DCH PS handover
+    pc_FeatrGrp_9 : not support
+      - EUTRA RRC_CONNECTED to GERAN GSM_Dedicated handover
+    pc_FeatrGrp_10 : not support
+      - EUTRA RRC_CONNECTED to GERAN (Packet_) Idle by Cell Change Order
+      - EUTRA RRC_CONNECTED to GERAN (Packet_) Idle by Cell Change Order with NACC (Network Assisted Cell Change)
+    pc_FeatrGrp_11 : not support
+      - EUTRA RRC_CONNECTED to CDMA2000 1xRTT CS Active handover
+    pc_FeatrGrp_12 : not support
+      - EUTRA RRC_CONNECTED to CDMA2000 HRPD Active handover
+    pc_FeatrGrp_13 : support
+      - Inter-frequency handover (within FDD or TDD)
+    pc_FeatrGrp_14 : support
+      - Measurement reporting event: Event A4 - Neighbour &gt; threshold
+      - Measurement reporting event: Event A5 - Serving &lt; threshold1 &amp; Neighbour &gt; threshold2
+    pc_FeatrGrp_15 : support
+      - Measurement reporting event: Event B1 - Neighbour &gt; threshold
+    pc_FeatrGrp_16 : support
+      - non-ANR related intra-frequency periodical measurement reporting
+      - non-ANR related inter-frequency periodical measurement reporting, if the UE has set bit number 25 to 1; and
+      - non-ANR related inter-RAT periodical measurement reporting for UTRAN, GERAN, 1xRTT or HRPD, if the UE has set bit number 22, 23, 24 or 26 to 1, respectively.
+    pc_FeatrGrp_17 : support
+      - Periodical measurement reporting for SON / ANR
+      - ANR related intra-frequency measurement reporting events
+    pc_FeatrGrp_18 : support
+      - ANR related inter-frequency measurement reporting events
+    pc_FeatrGrp_19 : support
+      - ANR related inter-RAT measurement reporting events
+    pc_FeatrGrp_20 : support
+      If bit number 7 is set to 0:
+      - SRB1 and SRB2 for DCCH + 8x AM DRB
+      If bit number 7 is set to 1:
+      - SRB1 and SRB2 for DCCH + 8x AM DRB
+      - SRB1 and SRB2 for DCCH + 5x AM DRB + 3x UM DRB
+    pc_FeatrGrp_21 : support
+      - Predefined intra- and inter-subframe frequency hopping for PUSCH with N_sb &gt; 1
+      - Predefined inter-subframe frequency hopping for PUSCH with N_sb &gt; 1
+    pc_FeatrGrp_22 : support
+      - UTRAN measurements, reporting and measurement reporting event B2 in E-UTRA connected mode
+    pc_FeatrGrp_23 : support
+      - GERAN measurements, reporting and measurement reporting event B2 in E-UTRA connected mode
+    pc_FeatrGrp_24 : support
+      - 1xRTT measurements, reporting and measurement reporting event B2 in E-UTRA connected mode
+    pc_FeatrGrp_25 : support
+      - Inter-frequency measurements and reporting in E-UTRA connected mode
+    pc_FeatrGrp_26 : support
+      - HRPD measurements, reporting and measurement reporting event B2 in E-UTRA connected mode
+    pc_FeatrGrp_27 : support
+      - EUTRA RRC_CONNECTED to UTRA CELL_DCH CS handover
+    pc_FeatrGrp_28 : support
+      - TTI bundling
+    pc_FeatrGrp_29 : support
+      - Semi-Persistent Scheduling
+    pc_FeatrGrp_30 : support
+      - Handover between FDD and TDD
+    pc_FeatrGrp_31 : support
+      - Multi Frequency Band Information (MFBI) 
+  [Feature Group Indicators Rel9 Add] : 
+    pc_FeatrGrp_33 : not support
+      Inter-RAT ANR features for UTRAN FDD including:
+      - Inter-RAT periodical measurement reporting where triggerType is set to periodical and purpose is set to reportStrongestCellsForSON
+      - Inter-RAT periodical measurement reporting  where triggerType is set to periodical and purpose is set to reportCGI
+    pc_FeatrGrp_34 : not support
+      Inter-RAT ANR features for GERAN including:
+      - Inter-RAT periodical measurement reporting where triggerType is set to periodical and purpose is set to reportStrongestCells
+      - Inter-RAT periodical measurement reporting  where triggerType is set to periodical and purpose is set to reportCGI
+    pc_FeatrGrp_35 : support
+      Inter-RAT ANR features for 1xRTT including:
+      - Inter-RAT periodical measurement reporting where triggerType is set to periodical and purpose is set to reportStrongestCellsForSON
+      - Inter-RAT periodical measurement reporting  where triggerType is set to periodical and purpose is set to reportCGI
+    pc_FeatrGrp_36 : support
+      Inter-RAT ANR features for HRPD including:
+      - Inter-RAT periodical measurement reporting where triggerType is set to periodical and purpose is set to reportStrongestCellsForSON
+      - Inter-RAT periodical measurement reporting  where triggerType is set to periodical and purpose is set to reportCGI
+    pc_FeatrGrp_37 : support
+      Inter-RAT ANR features for UTRAN TDD including:
+      - Inter-RAT periodical measurement reporting where triggerType is set to periodical and purpose is set to reportStrongestCellsForSON
+      - Inter-RAT periodical measurement reporting  where triggerType is set to periodical and purpose is set to reportCGI
+    pc_FeatrGrp_38 : support
+      - EUTRA RRC_CONNECTED to UTRA TDD CELL_DCH PS handover, if the UE supports both UTRAN FDD and UTRAN TDD
+    pc_FeatrGrp_39 : not support
+      - UTRAN TDD measurements, reporting and measurement reporting event B2 in E-UTRA connected mode, if the UE supports both UTRAN FDD and UTRAN TDD
+    pc_FeatrGrp_40 : not support
+      - EUTRA RRC_CONNECTED to UTRA TDD  CELL_DCH  CS handover, if the UE supports both UTRAN FDD and UTRAN TDD
+    pc_FeatrGrp_41 : not support
+      Measurement reporting event: Event B1  Neighbour &gt; threshold for UTRAN FDD, if the UE supports UTRAN FDD and has set bit number 22 to 1
+    pc_FeatrGrp_42 : not support
+      - DCI format 3a (TPC commands for PUCCH and PUSCH with single bit power adjustments)
+  [Feature Group Indicators Rel10 Add] : 
+    pc_FeatrGrp_101 : not support
+      - DMRS with OCC (orthogonal cover code) and SGH (sequence group hopping) disabling
+    pc_FeatrGrp_102 : not support
+      - Trigger type 1 SRS (aperiodic SRS) transmission (Up to X ports)
+      NOTE: X = number of supported layers on given band
+    pc_FeatrGrp_103 : not support
+      - PDSCH transmission mode 9 when up to 4 CSI reference signal ports are configured
+    pc_FeatrGrp_104 : support
+      - PDSCH transmission mode 9 for TDD when 8 CSI reference signal ports are configured
+    pc_FeatrGrp_105 : not support
+      - Periodic CQI/PMI/RI reporting on PUCCH: Mode 2-0
+      UE selected subband CQI without PMI, when PDSCH transmission mode 9 is configured
+      - Periodic CQI/PMI/RI reporting on PUCCH: Mode 2-1
+      UE selected subband CQI with single PMI, when PDSCH transmission mode 9 and up to 4 CSI reference signal ports are configured
+    pc_FeatrGrp_106 : not support
+      - Periodic CQI/PMI/RI/PTI reporting on PUCCH: Mode 2-1
+      UE selected subband CQI with single PMI, when PDSCH transmission mode 9 and 8 CSI reference signal ports are configured
+    pc_FeatrGrp_107 : not support
+      - Aperiodic CQI/PMI/RI reporting on PUSCH: Mode 2-0
+      UE selected subband CQI without PMI, when PDSCH transmission mode 9 is configured
+      - Aperiodic CQI/PMI/RI reporting on PUSCH: Mode 2-2
+      UE selected subband CQI with multiple PMI, when PDSCH transmission mode 9 and up to 4 CSI reference signal ports are configured
+    pc_FeatrGrp_108 : not support
+      - Aperiodic CQI/PMI/RI reporting on PUSCH: Mode 2-2
+      UE selected subband CQI with multiple PMI, when PDSCH transmission mode 9 and 8 CSI reference signal ports are configured
+    pc_FeatrGrp_109 : not support
+      - Periodic CQI/PMI/RI reporting on PUCCH Mode 1-1, submode 1
+    pc_FeatrGrp_110 : not support
+      - Periodic CQI/PMI/RI reporting on PUCCH Mode 1-1, submode 2
+    pc_FeatrGrp_111 : support
+      - Measurement reporting trigger Event A6
+    pc_FeatrGrp_112 : not support
+      - SCell addition within the Handover to EUTRA procedure
+    pc_FeatrGrp_113 : not support
+      - Trigger type 0 SRS (periodic SRS) transmission on X Serving Cells
+      NOTE: X = number of supported component carriers in a given band combination
+    pc_FeatrGrp_114 : support
+      - Reporting of both UTRA CPICH RSCP and Ec/N0 in a Measurement Report
+    pc_FeatrGrp_115 : not support
+      - time domain ICIC RLM/RRM measurement subframe restriction for the serving cell
+      - time domain ICIC RRM measurement subframe restriction for neighbour cells
+      - time domain ICIC CSI measurement subframe restriction
+    pc_FeatrGrp_116 : not support
+      - Relative transmit phase continuity for spatial multiplexing in UL
+
+L3 Data in Hex : 
+    38 01 08 13 2D DB 80 50 7A 02
+    01 18 2D F8 37 E1 E3 FF 9D FF
+    FE 3F F9 DF FF E3 FF 9D FF FE
+    3F F9 DF FF E3 FF 9D FF FE 3F
+    F9 DF FF E3 FF 9D FF FE 3F F9
+    DF FF FF C3 FF FF A3 88 00 8C
+    87 0C A7 4A 82 00 12 81 00 09
+    44 A8 FC A3 FC 00 00 00 08 3F
+    C7 FF FF 98 2F F0 FF FF E5 E3
+    82 02 83 1F F0 00 00 00 2C 5C
+    00 A0 04 80 18 01 40 0C 00 C0
+    0C 00 96 83 EA 83 1C 00 58 1D
+    00 00 82 06 20 00 20 01 82 00
+    08 20 66 00 02 00 19 60 00 80
+    07 F8 00 20 81 86 00 08 20 7F
+    80 02 00 1D 00 00 92 07 40 08
+    26 81 D0 00 09 A0 74 00 82 48
+    B8 FF E7 7F FF 8F FE 77 FF F8
+    FF E7 7F FF 8F FE 77 FF F8 FF
+    E7 7F FF 8F FE 77 FF F8 FF E7
+    7F FF 8F FE 77 FF F8 FF E7 7F
+    FF 8F FE 77 FF F8 FF E7 7F FF
+    8F FE 77 FF F1 02 40 00 0F C8
+    20 48 00 00 43 FE C0 00 01 60
+    01 C5 80 00 00 00 00 00 80 80
+    00 83 00 00 00 00 4C 10 07 CE
+    08 A0 64 62 BC D0 20 0A 47 FF
+    FF CD 29 77 8A 01 F0 00 84 01
+    30 3A 80 01 24 90 00 02 00 05
+    10 4B 8A 00 05 0F 01 08 10 40
+    08 10 41 0A 32 00 00 02 20 00
+    00</pre></body></html>

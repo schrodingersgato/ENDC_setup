@@ -1,0 +1,57 @@
+
+<!-- saved from url=(0113)http://experience.awardsolutions.com/interactive_callflows/EN_DC_Setup/Drive_Logs/Log7_LTE_Measurement_Report.txt -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Copyright © 2019 Accuver Americas, Inc. All Rights Reserved
+# The data in this file is derived from log(s) provided through
+# the courtesy of Accuver Americas, Inc. under special permission
+# to Award Solutions, Inc. 
+
+Version_number : 26
+RRC_VER_Major : 15
+RRC_VER_minor : 4.0
+NR_RRC_VER_Major : 15
+NR_RRC_VER_minor : 4.1
+RB_ID : 1
+PHYSICAL_CELL_ID : 85
+FREQ : 41094
+Subframe_number : N/A
+System_frame_number : N/A
+PDU_NUM : UL_DCCH Message
+SIB_Mask_in_SI : 0x00000000
+ENCODED_MSG_LEN : 25
+
+
+value UL-DCCH-Message ::= 
+  message c1 : measurementReport : 
+        criticalExtensions c1 : measurementReport-r8 : 
+              measResults 
+                measId 3,
+                measResultPCell 
+                  rsrpResult 65,
+                  rsrqResult 23
+                 ,
+                measResultNeighCells measResultNeighCellListNR-r15 : 
+                      pci-r15 85,
+                      measResultCell-r15 
+                        rsrpResult-r15 80,
+                        rsrqResult-r15 65
+                     ,
+                      pci-r15 44,
+                      measResultCell-r15 
+                        rsrpResult-r15 73,
+                        rsrqResult-r15 49
+                   ,
+                measResultServFreqList-r10 
+                    servFreqId-r10 1,
+                    measResultSCell-r10 
+                      rsrpResultSCell-r10 65,
+                      rsrqResultSCell-r10 24
+                   ,
+                    servFreqId-r10 2,
+                    measResultSCell-r10 
+                      rsrpResultSCell-r10 63,
+                      rsrqResultSCell-r10 23
+
+
+L3 Data in Hex : 
+    08 31 41 5E 00 20 82 AB 50 82
+    05 8D 25 88 3E 00 08 00 32 51</pre></body></html>

@@ -1,0 +1,1286 @@
+
+<!-- saved from url=(0114)http://experience.awardsolutions.com/interactive_callflows/EN_DC_Setup/Drive_Logs/Log10_NR_RRC_Reconfiguration.txt -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Copyright © 2019 Accuver Americas, Inc. All Rights Reserved
+# The data in this file is derived from log(s) provided through
+# the courtesy of Accuver Americas, Inc. under special permission
+# to Award Solutions, Inc. 
+
+PC Timestamp: [ 2019  Jun  20    15:06:11.532 ]
+
+
+Version_number : 26
+RRC_VER_Major : 15
+RRC_VER_minor : 4.0
+NR_RRC_VER_Major : 15
+NR_RRC_VER_minor : 4.1
+RB_ID : 1
+PHYSICAL_CELL_ID : 85
+FREQ : 41292
+Subframe_number : 49
+System_frame_number : N/A
+PDU_NUM : DL_DCCH Message
+SIB_Mask_in_SI : 0x00000000
+ENCODED_MSG_LEN : 601
+
+
+value DL-DCCH-Message ::= 
+  message c1 : rrcConnectionReconfiguration : 
+        rrc-TransactionIdentifier 3,
+        criticalExtensions c1 : rrcConnectionReconfiguration-r8 : 
+              measConfig 
+                measObjectToRemoveList 
+                  2
+                 ,
+                measObjectToAddModList 
+                    measObjectId 4,
+                    measObject measObjectEUTRA : 
+                        carrierFreq 41094,
+                        allowedMeasBandwidth mbw100,
+                        presenceAntennaPort1 TRUE,
+                        neighCellConfig '10'B,
+                        measCycleSCell-r10 sf160
+                   ,
+                    measObjectId 3,
+                    measObject measObjectEUTRA : 
+                        carrierFreq 41490,
+                        allowedMeasBandwidth mbw100,
+                        presenceAntennaPort1 TRUE,
+                        neighCellConfig '10'B,
+                        measCycleSCell-r10 sf160
+                   ,
+                    measObjectId 1,
+                    measObject measObjectEUTRA : 
+                        carrierFreq 41292,
+                        allowedMeasBandwidth mbw100,
+                        presenceAntennaPort1 TRUE,
+                        neighCellConfig '10'B,
+                        cellsToAddModList 
+                            cellIndex 1,
+                            physCellId 42,
+                            cellIndividualOffset dB-1
+                           ,
+                            cellIndex 2,
+                            physCellId 44,
+                            cellIndividualOffset dB-1
+                           ,
+                            cellIndex 3,
+                            physCellId 92,
+                            cellIndividualOffset dB-1
+                           ,
+                            cellIndex 4,
+                            physCellId 185,
+                            cellIndividualOffset dB-1
+                           ,
+                            cellIndex 5,
+                            physCellId 212,
+                            cellIndividualOffset dB-1
+                           ,
+                            cellIndex 6,
+                            physCellId 230,
+                            cellIndividualOffset dB-1
+                           ,
+                            cellIndex 7,
+                            physCellId 414,
+                            cellIndividualOffset dB-1
+                 ,
+                reportConfigToRemoveList 
+                  3,
+                  4,
+                  6
+                 ,
+                reportConfigToAddModList 
+                    reportConfigId 8,
+                    reportConfig reportConfigEUTRA : 
+                        triggerType event : 
+                            eventId eventA2 : 
+                                a2-Threshold threshold-RSRP : 14
+                               ,
+                            hysteresis 2,
+                            timeToTrigger ms40
+                           ,
+                        triggerQuantity rsrp,
+                        reportQuantity both,
+                        maxReportCells 1,
+                        reportInterval ms480,
+                        reportAmount infinity
+                   ,
+                    reportConfigId 9,
+                    reportConfig reportConfigEUTRA : 
+                        triggerType event : 
+                            eventId eventA2 : 
+                                a2-Threshold threshold-RSRP : 14
+                               ,
+                            hysteresis 2,
+                            timeToTrigger ms40
+                           ,
+                        triggerQuantity rsrp,
+                        reportQuantity both,
+                        maxReportCells 1,
+                        reportInterval ms480,
+                        reportAmount infinity
+                   ,
+                    reportConfigId 1,
+                    reportConfig reportConfigEUTRA : 
+                        triggerType event : 
+                            eventId eventA3 : 
+                                a3-Offset 4,
+                                reportOnLeave FALSE
+                               ,
+                            hysteresis 0,
+                            timeToTrigger ms480
+                           ,
+                        triggerQuantity rsrp,
+                        reportQuantity both,
+                        maxReportCells 4,
+                        reportInterval ms480,
+                        reportAmount infinity
+                   ,
+                    reportConfigId 2,
+                    reportConfig reportConfigEUTRA : 
+                        triggerType event : 
+                            eventId eventA2 : 
+                                a2-Threshold threshold-RSRP : 26
+                               ,
+                            hysteresis 4,
+                            timeToTrigger ms480
+                           ,
+                        triggerQuantity rsrp,
+                        reportQuantity both,
+                        maxReportCells 1,
+                        reportInterval ms5120,
+                        reportAmount infinity
+                 ,
+                measIdToRemoveList 
+                  3,
+                  4,
+                  6
+                 ,
+                measIdToAddModList 
+                    measId 8,
+                    measObjectId 4,
+                    reportConfigId 8
+                   ,
+                    measId 9,
+                    measObjectId 3,
+                    reportConfigId 9
+                   ,
+                    measId 1,
+                    measObjectId 1,
+                    reportConfigId 1
+                   ,
+                    measId 2,
+                    measObjectId 1,
+                    reportConfigId 2
+               ,
+              mobilityControlInfo 
+                targetPhysCellId 85,
+                carrierFreq 
+                  dl-CarrierFreq 41292
+                 ,
+                carrierBandwidth 
+                  dl-Bandwidth n100
+                 ,
+                additionalSpectrumEmission 1,
+                t304 ms2000,
+                newUE-Identity '00111110 10010001'B,
+                radioResourceConfigCommon 
+                  rach-ConfigCommon 
+                    preambleInfo 
+                      numberOfRA-Preambles n52
+                     ,
+                    powerRampingParameters 
+                      powerRampingStep dB4,
+                      preambleInitialReceivedTargetPower dBm-110
+                     ,
+                    ra-SupervisionInfo 
+                      preambleTransMax n10,
+                      ra-ResponseWindowSize sf10,
+                      mac-ContentionResolutionTimer sf64
+                     ,
+                    maxHARQ-Msg3Tx 4
+                   ,
+                  prach-Config 
+                    rootSequenceIndex 160,
+                    prach-ConfigInfo 
+                      prach-ConfigIndex 4,
+                      highSpeedFlag FALSE,
+                      zeroCorrelationZoneConfig 11,
+                      prach-FreqOffset 9
+                   ,
+                  pdsch-ConfigCommon 
+                    referenceSignalPower 13,
+                    p-b 1
+                   ,
+                  pusch-ConfigCommon 
+                    pusch-ConfigBasic 
+                      n-SB 1,
+                      hoppingMode interSubFrame,
+                      pusch-HoppingOffset 0,
+                      enable64QAM TRUE
+                     ,
+                    ul-ReferenceSignalsPUSCH 
+                      groupHoppingEnabled TRUE,
+                      groupAssignmentPUSCH 0,
+                      sequenceHoppingEnabled FALSE,
+                      cyclicShift 0
+                   ,
+                  phich-Config 
+                    phich-Duration normal,
+                    phich-Resource one
+                   ,
+                  pucch-ConfigCommon 
+                    deltaPUCCH-Shift ds1,
+                    nRB-CQI 4,
+                    nCS-AN 0,
+                    n1PUCCH-AN 92
+                   ,
+                  soundingRS-UL-ConfigCommon setup : 
+                      srs-BandwidthConfig bw0,
+                      srs-SubframeConfig sc0,
+                      ackNackSRS-SimultaneousTransmission TRUE
+                     ,
+                  uplinkPowerControlCommon 
+                    p0-NominalPUSCH -103,
+                    alpha al1,
+                    p0-NominalPUCCH -117,
+                    deltaFList-PUCCH 
+                      deltaF-PUCCH-Format1 deltaF0,
+                      deltaF-PUCCH-Format1b deltaF3,
+                      deltaF-PUCCH-Format2 deltaF0,
+                      deltaF-PUCCH-Format2a deltaF0,
+                      deltaF-PUCCH-Format2b deltaF0
+                     ,
+                    deltaPreambleMsg3 6
+                   ,
+                  antennaInfoCommon 
+                    antennaPortsCount an2
+                   ,
+                  p-Max 27,
+                  tdd-Config 
+                    subframeAssignment sa2,
+                    specialSubframePatterns ssp6
+                   ,
+                  ul-CyclicPrefixLength len1,
+                  uplinkPowerControlCommon-v1020 
+                    deltaF-PUCCH-Format3-r10 deltaF0,
+                    deltaF-PUCCH-Format1bCS-r10 deltaF2
+                   ,
+                  pusch-ConfigCommon-v1270 
+                    enable64QAM-v1270 true
+                 ,
+                rach-ConfigDedicated 
+                  ra-PreambleIndex 52,
+                  ra-PRACH-MaskIndex 0
+               ,
+              radioResourceConfigDedicated 
+                srb-ToAddModList 
+                    srb-Identity 1,
+                    rlc-Config explicitValue : am : 
+                          ul-AM-RLC 
+                            t-PollRetransmit ms160,
+                            pollPDU pInfinity,
+                            pollByte kBinfinity,
+                            maxRetxThreshold t32
+                           ,
+                          dl-AM-RLC 
+                            t-Reordering ms60,
+                            t-StatusProhibit ms0
+                         ,
+                    logicalChannelConfig defaultValue : NULL
+                   ,
+                    srb-Identity 2,
+                    rlc-Config explicitValue : am : 
+                          ul-AM-RLC 
+                            t-PollRetransmit ms160,
+                            pollPDU pInfinity,
+                            pollByte kBinfinity,
+                            maxRetxThreshold t32
+                           ,
+                          dl-AM-RLC 
+                            t-Reordering ms60,
+                            t-StatusProhibit ms0
+                         ,
+                    logicalChannelConfig defaultValue : NULL
+                 ,
+                drb-ToAddModList 
+                    eps-BearerIdentity 5,
+                    drb-Identity 3,
+                    rlc-Config am : 
+                        ul-AM-RLC 
+                          t-PollRetransmit ms160,
+                          pollPDU p16,
+                          pollByte kBinfinity,
+                          maxRetxThreshold t32
+                         ,
+                        dl-AM-RLC 
+                          t-Reordering ms25,
+                          t-StatusProhibit ms0
+                       ,
+                    logicalChannelIdentity 3,
+                    logicalChannelConfig 
+                      ul-SpecificParameters 
+                        priority 11,
+                        prioritisedBitRate kBps8,
+                        bucketSizeDuration ms50,
+                        logicalChannelGroup 3
+                 ,
+                mac-MainConfig explicitValue : 
+                    ul-SCH-Config 
+                      maxHARQ-Tx n7,
+                      periodicBSR-Timer sf5,
+                      retxBSR-Timer sf320,
+                      ttiBundling FALSE
+                     ,
+                    drx-Config setup : 
+                        onDurationTimer psf10,
+                        drx-InactivityTimer psf200,
+                        drx-RetransmissionTimer psf2,
+                        longDRX-CycleStartOffset sf320 : 4,
+                        shortDRX 
+                          shortDRX-Cycle sf40,
+                          drxShortCycleTimer 2
+                       ,
+                    timeAlignmentTimerDedicated infinity,
+                    phr-Config setup : 
+                        periodicPHR-Timer sf200,
+                        prohibitPHR-Timer sf200,
+                        dl-PathlossChange dB3
+                       ,
+                    mac-MainConfig-v1020 
+                   ,
+                physicalConfigDedicated 
+                  pdsch-ConfigDedicated 
+                    p-a dB-1dot77
+                   ,
+                  pusch-ConfigDedicated 
+                    betaOffset-ACK-Index 10,
+                    betaOffset-RI-Index 9,
+                    betaOffset-CQI-Index 10
+                   ,
+                  soundingRS-UL-ConfigDedicated setup : 
+                      srs-Bandwidth bw0,
+                      srs-HoppingBandwidth hbw0,
+                      freqDomainPosition 0,
+                      duration TRUE,
+                      srs-ConfigIndex 35,
+                      transmissionComb 0,
+                      cyclicShift cs6
+                     ,
+                  schedulingRequestConfig setup : 
+                      sr-PUCCH-ResourceIndex 72,
+                      sr-ConfigIndex 17,
+                      dsr-TransMax n64
+                     ,
+                  antennaInfo-r10 explicitValue-r10 : 
+                      transmissionMode-r10 tm8-v920,
+                      codebookSubsetRestriction-r10 '111111'B,
+                      ue-TransmitAntennaSelection release : NULL
+                     ,
+                  cqi-ReportConfig-r10 
+                    cqi-ReportAperiodic-r10 setup : 
+                        cqi-ReportModeAperiodic-r10 rm31,
+                        aperiodicCSI-Trigger-r10 
+                          trigger1-r10 '01000000'B,
+                          trigger2-r10 '10100000'B
+                       ,
+                    nomPDSCH-RS-EPRE-Offset 3,
+                    cqi-ReportPeriodic-r10 setup : 
+                        cqi-PUCCH-ResourceIndex-r10 0,
+                        cqi-pmi-ConfigIndex 88,
+                        cqi-FormatIndicatorPeriodic-r10 widebandCQI-r10 : 
+                           ,
+                        ri-ConfigIndex 322,
+                        simultaneousAckNackAndCQI FALSE
+                       ,
+                    pmi-RI-Report-r9 setup
+                   ,
+                  pucch-ConfigDedicated-v1020 
+                    pucch-Format-r10 format3-r10 : 
+                        n3PUCCH-AN-List-r13 
+                          88,
+                          85,
+                          86,
+                          87
+               ,
+              securityConfigHO 
+                handoverType intraLTE : 
+                    securityAlgorithmConfig 
+                      cipheringAlgorithm eea2,
+                      integrityProtAlgorithm eia2
+                     ,
+                    keyChangeIndicator FALSE,
+                    nextHopChainingCount 0
+               ,
+              nonCriticalExtension 
+                nonCriticalExtension 
+                  fullConfig-r9 true,
+                  nonCriticalExtension 
+                    sCellToReleaseList-r10 
+                      1,
+                      2
+                     ,
+                    sCellToAddModList-r10 
+                        sCellIndex-r10 1,
+                        cellIdentification-r10 
+                          physCellId-r10 85,
+                          dl-CarrierFreq-r10 41094
+                         ,
+                        radioResourceConfigCommonSCell-r10 
+                          nonUL-Configuration-r10 
+                            dl-Bandwidth-r10 n100,
+                            antennaInfoCommon-r10 
+                              antennaPortsCount an2
+                             ,
+                            phich-Config-r10 
+                              phich-Duration normal,
+                              phich-Resource one
+                             ,
+                            pdsch-ConfigCommon-r10 
+                              referenceSignalPower 13,
+                              p-b 1
+                             ,
+                            tdd-Config-r10 
+                              subframeAssignment sa2,
+                              specialSubframePatterns ssp6
+                         ,
+                        radioResourceConfigDedicatedSCell-r10 
+                          physicalConfigDedicatedSCell-r10 
+                            nonUL-Configuration-r10 
+                              antennaInfo-r10 
+                                transmissionMode-r10 tm3,
+                                codebookSubsetRestriction-r10 '11'B,
+                                ue-TransmitAntennaSelection release : NULL
+                               ,
+                              pdsch-ConfigDedicated-r10 
+                                p-a dB-1dot77
+                             ,
+                            ul-Configuration-r10 
+                              cqi-ReportConfigSCell-r10 
+                                cqi-ReportModeAperiodic-r10 rm30,
+                                nomPDSCH-RS-EPRE-Offset-r10 0
+                       ,
+                        sCellIndex-r10 2,
+                        cellIdentification-r10 
+                          physCellId-r10 85,
+                          dl-CarrierFreq-r10 41490
+                         ,
+                        radioResourceConfigCommonSCell-r10 
+                          nonUL-Configuration-r10 
+                            dl-Bandwidth-r10 n100,
+                            antennaInfoCommon-r10 
+                              antennaPortsCount an2
+                             ,
+                            phich-Config-r10 
+                              phich-Duration normal,
+                              phich-Resource one
+                             ,
+                            pdsch-ConfigCommon-r10 
+                              referenceSignalPower 13,
+                              p-b 1
+                             ,
+                            tdd-Config-r10 
+                              subframeAssignment sa2,
+                              specialSubframePatterns ssp6
+                         ,
+                        radioResourceConfigDedicatedSCell-r10 
+                          physicalConfigDedicatedSCell-r10 
+                            nonUL-Configuration-r10 
+                              antennaInfo-r10 
+                                transmissionMode-r10 tm3,
+                                codebookSubsetRestriction-r10 '11'B,
+                                ue-TransmitAntennaSelection release : NULL
+                               ,
+                              pdsch-ConfigDedicated-r10 
+                                p-a dB-1dot77
+                             ,
+                            ul-Configuration-r10 
+                              cqi-ReportConfigSCell-r10 
+                                cqi-ReportModeAperiodic-r10 rm30,
+                                nomPDSCH-RS-EPRE-Offset-r10 0
+                     ,
+                    nonCriticalExtension 
+                      nonCriticalExtension 
+                        nonCriticalExtension 
+                          nonCriticalExtension 
+                            nonCriticalExtension 
+                              nr-Config-r15 setup : 
+                                  endc-ReleaseAndAdd-r15 FALSE,
+                                  nr-SecondaryCellGroupConfig-r15 '0881745C40B04431C55FC8120DC4E80F84281020F4AC041ADD3A7710AAD1FDD780503F43B0000134B3865994503FFFE000000020009B82210000010400D1141834005000004D2E70CB3624F001E5C6A1ECCCB093BC11B84370C6E20DC51B8C37206E48DF669A2AAC79804335183EEDC008090124C0D88037084200000216520E0C8204004408024000222830060586123500151D2801940010013355548410001040C2100E0D80001A48500C0800D24A8060800692940306003496A0184001A4C500C2800D26A80638D200614102C0180EA179A2B3C5E4D21A492040060876F046E10DC31B8837146E30DC81B92371F7A1473149CA05040100AE0001000020000000022115AA8AC0860002108005440AB2400180808820015102AC900060402108005440AB2440181808820015102AC910060861B590015102ABA404110030001020300400403804C0054748000000801000201400880A000802F000416E38E38E38E38E784FF90FFFFFFFFFFFFFFFF879330004000000'H,
+                                  p-MaxEUTRA-r15 23
+                                 ,
+                              sk-Counter-r15 0,
+                              nr-RadioBearerConfig2-r15 '1409289F8FC5174D81'H
+[5G-NR RRC_F40 Data] : 
+value RadioBearerConfig ::= 
+  drb-ToAddModList 
+      cnAssociation eps-BearerIdentity : 5,
+      drb-Identity 3,
+      pdcp-Config 
+        drb 
+          discardTimer infinity,
+          pdcp-SN-SizeUL len18bits,
+          pdcp-SN-SizeDL len18bits,
+          headerCompression notUsed : NULL
+         ,
+        moreThanOneRLC 
+          primaryPath 
+            cellGroup 0
+           ,
+          ul-DataSplitThreshold infinity
+         ,
+        t-Reordering ms200
+   ,
+  securityConfig 
+    securityAlgorithmConfig 
+      cipheringAlgorithm nea0
+     ,
+    keyToUse secondary
+[5G-NR RRC_F40 Data] : 
+value RRCReconfiguration ::= 
+  rrc-TransactionIdentifier 0,
+  criticalExtensions rrcReconfiguration : 
+      secondaryCellGroup 
+        CONTAINING
+          cellGroupId 1,
+          rlc-BearerToAddModList 
+              logicalChannelIdentity 1,
+              servedRadioBearer drb-Identity : 3,
+              rlc-Config am : 
+                  ul-AM-RLC 
+                    sn-FieldLength size18,
+                    t-PollRetransmit ms40,
+                    pollPDU p16,
+                    pollByte infinity,
+                    maxRetxThreshold t32
+                   ,
+                  dl-AM-RLC 
+                    sn-FieldLength size18,
+                    t-Reassembly ms20,
+                    t-StatusProhibit ms10
+                 ,
+              mac-LogicalChannelConfig 
+                ul-SpecificParameters 
+                  priority 8,
+                  prioritisedBitRate kBps8,
+                  bucketSizeDuration ms50,
+                  logicalChannelGroup 5,
+                  schedulingRequestID 0,
+                  logicalChannelSR-Mask FALSE,
+                  logicalChannelSR-DelayTimerApplied FALSE
+           ,
+          mac-CellGroupConfig 
+            schedulingRequestConfig 
+              schedulingRequestToAddModList 
+                  schedulingRequestId 0,
+                  sr-ProhibitTimer ms4,
+                  sr-TransMax n64
+             ,
+            bsr-Config 
+              periodicBSR-Timer sf10,
+              retxBSR-Timer sf10
+             ,
+            tag-Config 
+              tag-ToAddModList 
+                  tag-Id 0,
+                  timeAlignmentTimer infinity
+             ,
+            phr-Config setup : 
+                phr-PeriodicTimer sf200,
+                phr-ProhibitTimer sf200,
+                phr-Tx-PowerFactorChange dB3,
+                multiplePHR TRUE,
+                dummy FALSE,
+                phr-Type2OtherCell FALSE,
+                phr-ModeOtherCG real
+               ,
+            skipUplinkTxDynamic FALSE
+           ,
+          physicalCellGroupConfig 
+            p-NR-FR1 23,
+            pdsch-HARQ-ACK-Codebook dynamic
+           ,
+          spCellConfig 
+            servCellIndex 7,
+            reconfigurationWithSync 
+              spCellConfigCommon 
+                physCellId 85,
+                downlinkConfigCommon 
+                  frequencyInfoDL 
+                    absoluteFrequencySSB 522078,
+                    frequencyBandList 
+                      41
+                     ,
+                    absoluteFrequencyPointA 518262,
+                    scs-SpecificCarrierList 
+                        offsetToCarrier 0,
+                        subcarrierSpacing kHz30,
+                        carrierBandwidth 106
+                   ,
+                  initialDownlinkBWP 
+                    genericParameters 
+                      locationAndBandwidth 28875,
+                      subcarrierSpacing kHz30
+                     ,
+                    pdcch-ConfigCommon setup : 
+                        commonControlResourceSet 
+                          controlResourceSetId 1,
+                          frequencyDomainResources '11111111 11111111 00000000 00000000 00000000 00000'B,
+                          duration 1,
+                          cce-REG-MappingType nonInterleaved : NULL,
+                          precoderGranularity sameAsREG-bundle,
+                          tci-StatesPDCCH-ToAddList 
+                            1
+                         ,
+                        commonSearchSpaceList 
+                            searchSpaceId 1,
+                            controlResourceSetId 1,
+                            monitoringSlotPeriodicityAndOffset sl1 : NULL,
+                            monitoringSymbolsWithinSlot '10000000 000000'B,
+                            nrofCandidates 
+                              aggregationLevel1 n0,
+                              aggregationLevel2 n0,
+                              aggregationLevel4 n0,
+                              aggregationLevel8 n2,
+                              aggregationLevel16 n0
+                             ,
+                            searchSpaceType common : 
+                                dci-Format0-0-AndFormat1-0 
+                         ,
+                        ra-SearchSpace 1
+                       ,
+                    pdsch-ConfigCommon setup : 
+                        pdsch-TimeDomainAllocationList 
+                            mappingType typeA,
+                            startSymbolAndLength 40
+                           ,
+                            mappingType typeA,
+                            startSymbolAndLength 96
+                 ,
+                uplinkConfigCommon 
+                  frequencyInfoUL 
+                    frequencyBandList 
+                      41
+                     ,
+                    scs-SpecificCarrierList 
+                        offsetToCarrier 0,
+                        subcarrierSpacing kHz30,
+                        carrierBandwidth 106
+                   ,
+                  initialUplinkBWP 
+                    genericParameters 
+                      locationAndBandwidth 28875,
+                      subcarrierSpacing kHz30
+                     ,
+                    rach-ConfigCommon setup : 
+                        rach-ConfigGeneric 
+                          prach-ConfigurationIndex 158,
+                          msg1-FDM one,
+                          msg1-FrequencyStart 1,
+                          zeroCorrelationZoneConfig 14,
+                          preambleReceivedTargetPower -110,
+                          preambleTransMax n10,
+                          powerRampingStep dB4,
+                          ra-ResponseWindow sl10
+                         ,
+                        totalNumberOfRA-Preambles 16,
+                        ssb-perRACH-OccasionAndCB-PreamblesPerSSB one : n16,
+                        ra-ContentionResolutionTimer sf16,
+                        prach-RootSequenceIndex l139 : 44,
+                        msg1-SubcarrierSpacing kHz30,
+                        restrictedSetConfig unrestrictedSet
+                       ,
+                    pusch-ConfigCommon setup : 
+                        pusch-TimeDomainAllocationList 
+                            k2 1,
+                            mappingType typeA,
+                            startSymbolAndLength 27
+                           ,
+                            k2 2,
+                            mappingType typeA,
+                            startSymbolAndLength 27
+                           ,
+                            k2 3,
+                            mappingType typeA,
+                            startSymbolAndLength 27
+                           ,
+                            k2 4,
+                            mappingType typeA,
+                            startSymbolAndLength 27
+                           ,
+                            k2 5,
+                            mappingType typeA,
+                            startSymbolAndLength 27
+                           ,
+                            k2 6,
+                            mappingType typeA,
+                            startSymbolAndLength 27
+                           ,
+                            k2 8,
+                            mappingType typeA,
+                            startSymbolAndLength 27
+                           ,
+                            k2 9,
+                            mappingType typeA,
+                            startSymbolAndLength 27
+                         ,
+                        msg3-DeltaPreamble 6,
+                        p0-NominalWithGrant -100
+                       ,
+                    pucch-ConfigCommon setup : 
+                        pucch-GroupHopping enable,
+                        hoppingId 85,
+                        p0-nominal -114
+                   ,
+                  dummy infinity
+                 ,
+                n-TimingAdvanceOffset n39936,
+                ssb-PositionsInBurst mediumBitmap : '10000000'B,
+                ssb-periodicityServingCell ms20,
+                dmrs-TypeA-Position pos2,
+                subcarrierSpacing kHz30,
+                ss-PBCH-BlockPower 17
+               ,
+              newUE-Identity 17935,
+              t304 ms1000
+             ,
+            rlf-TimersAndConstants setup : 
+                t310 ms2000,
+                n310 n20,
+                n311 n1,
+                t311-v1530 ms3000
+               ,
+            spCellConfigDedicated 
+              initialDownlinkBWP 
+                pdcch-Config setup : 
+                    searchSpacesToAddModList 
+                        searchSpaceId 2,
+                        controlResourceSetId 1,
+                        monitoringSlotPeriodicityAndOffset sl1 : NULL,
+                        monitoringSymbolsWithinSlot '10000000 000000'B,
+                        nrofCandidates 
+                          aggregationLevel1 n0,
+                          aggregationLevel2 n0,
+                          aggregationLevel4 n0,
+                          aggregationLevel8 n2,
+                          aggregationLevel16 n0
+                         ,
+                        searchSpaceType ue-Specific : 
+                            dci-Formats formats0-1-And-1-1
+                   ,
+                pdsch-Config setup : 
+                    dmrs-DownlinkForPDSCH-MappingTypeA setup : 
+                        dmrs-AdditionalPosition pos1
+                       ,
+                    tci-StatesToAddModList 
+                        tci-StateId 0,
+                        qcl-Type1 
+                          bwp-Id 0,
+                          referenceSignal ssb : 0,
+                          qcl-Type typeC
+                       ,
+                        tci-StateId 1,
+                        qcl-Type1 
+                          bwp-Id 0,
+                          referenceSignal csi-rs : 0,
+                          qcl-Type typeA
+                     ,
+                    resourceAllocation resourceAllocationType0,
+                    pdsch-TimeDomainAllocationList setup : 
+                          mappingType typeA,
+                          startSymbolAndLength 40
+                         ,
+                          mappingType typeA,
+                          startSymbolAndLength 96
+                       ,
+                    rbg-Size config1,
+                    mcs-Table qam256,
+                    maxNrofCodeWordsScheduledByDCI n1,
+                    prb-BundlingType staticBundling : 
+                        bundleSize wideband
+                       ,
+                    zp-CSI-RS-ResourceToAddModList 
+                        zp-CSI-RS-ResourceId 12,
+                        resourceMapping 
+                          frequencyDomainAllocation other : '000010'B,
+                          nrofPorts p4,
+                          firstOFDMSymbolInTimeDomain 3,
+                          cdm-Type fd-CDM2,
+                          density one : NULL,
+                          freqBand 
+                            startingRB 0,
+                            nrofRBs 108
+                         ,
+                        periodicityAndOffset slots40 : 18
+                     ,
+                    p-ZP-CSI-RS-ResourceSet setup : 
+                        zp-CSI-RS-ResourceSetId 0,
+                        zp-CSI-RS-ResourceIdList 
+                          12
+                   ,
+                radioLinkMonitoringConfig setup : 
+                    failureDetectionResourcesToAddModList 
+                        radioLinkMonitoringRS-Id 0,
+                        purpose rlf,
+                        detectionResource ssb-Index : 0
+               ,
+              firstActiveDownlinkBWP-Id 0,
+              uplinkConfig 
+                initialUplinkBWP 
+                  pucch-Config setup : 
+                      resourceSetToAddModList 
+                          pucch-ResourceSetId 0,
+                          resourceList 
+                            0,
+                            1,
+                            2,
+                            3,
+                            4
+                         ,
+                          pucch-ResourceSetId 1,
+                          resourceList 
+                            14
+                       ,
+                      resourceToAddModList 
+                          pucch-ResourceId 0,
+                          startingPRB 0,
+                          intraSlotFrequencyHopping enabled,
+                          secondHopPRB 105,
+                          format format1 : 
+                              initialCyclicShift 0,
+                              nrofSymbols 14,
+                              startingSymbolIndex 0,
+                              timeDomainOCC 0
+                         ,
+                          pucch-ResourceId 1,
+                          startingPRB 0,
+                          intraSlotFrequencyHopping enabled,
+                          secondHopPRB 105,
+                          format format1 : 
+                              initialCyclicShift 2,
+                              nrofSymbols 14,
+                              startingSymbolIndex 0,
+                              timeDomainOCC 0
+                         ,
+                          pucch-ResourceId 2,
+                          startingPRB 0,
+                          intraSlotFrequencyHopping enabled,
+                          secondHopPRB 105,
+                          format format1 : 
+                              initialCyclicShift 4,
+                              nrofSymbols 14,
+                              startingSymbolIndex 0,
+                              timeDomainOCC 0
+                         ,
+                          pucch-ResourceId 3,
+                          startingPRB 0,
+                          intraSlotFrequencyHopping enabled,
+                          secondHopPRB 105,
+                          format format1 : 
+                              initialCyclicShift 6,
+                              nrofSymbols 14,
+                              startingSymbolIndex 0,
+                              timeDomainOCC 0
+                         ,
+                          pucch-ResourceId 4,
+                          startingPRB 0,
+                          intraSlotFrequencyHopping enabled,
+                          secondHopPRB 105,
+                          format format1 : 
+                              initialCyclicShift 8,
+                              nrofSymbols 14,
+                              startingSymbolIndex 0,
+                              timeDomainOCC 0
+                         ,
+                          pucch-ResourceId 5,
+                          startingPRB 0,
+                          intraSlotFrequencyHopping enabled,
+                          secondHopPRB 105,
+                          format format1 : 
+                              initialCyclicShift 10,
+                              nrofSymbols 14,
+                              startingSymbolIndex 0,
+                              timeDomainOCC 0
+                         ,
+                          pucch-ResourceId 14,
+                          startingPRB 105,
+                          intraSlotFrequencyHopping enabled,
+                          secondHopPRB 0,
+                          format format3 : 
+                              nrofPRBs 1,
+                              nrofSymbols 14,
+                              startingSymbolIndex 0
+                       ,
+                      format1 setup : 
+                         ,
+                      format3 setup : 
+                          additionalDMRS true,
+                          maxCodeRate zeroDot08
+                         ,
+                      schedulingRequestResourceToAddModList 
+                          schedulingRequestResourceId 1,
+                          schedulingRequestID 0,
+                          periodicityAndOffset sl10 : 5,
+                          resource 5
+                       ,
+                      dl-DataToUL-ACK 
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        11,
+                        12
+                     ,
+                  pusch-Config setup : 
+                      txConfig codebook,
+                      dmrs-UplinkForPUSCH-MappingTypeA setup : 
+                          dmrs-AdditionalPosition pos1,
+                          transformPrecodingDisabled 
+                         ,
+                      pusch-PowerControl 
+                        p0-AlphaSets 
+                            p0-PUSCH-AlphaSetId 0,
+                            p0 0,
+                            alpha alpha1
+                       ,
+                      resourceAllocation resourceAllocationType1,
+                      pusch-TimeDomainAllocationList setup : 
+                            k2 1,
+                            mappingType typeA,
+                            startSymbolAndLength 27
+                           ,
+                            k2 2,
+                            mappingType typeA,
+                            startSymbolAndLength 27
+                           ,
+                            k2 3,
+                            mappingType typeA,
+                            startSymbolAndLength 27
+                           ,
+                            k2 4,
+                            mappingType typeA,
+                            startSymbolAndLength 27
+                           ,
+                            k2 5,
+                            mappingType typeA,
+                            startSymbolAndLength 27
+                           ,
+                            k2 6,
+                            mappingType typeA,
+                            startSymbolAndLength 27
+                           ,
+                            k2 8,
+                            mappingType typeA,
+                            startSymbolAndLength 27
+                           ,
+                            k2 9,
+                            mappingType typeA,
+                            startSymbolAndLength 27
+                         ,
+                      codebookSubset nonCoherent,
+                      maxRank 1,
+                      uci-OnPUSCH setup : 
+                          betaOffsets semiStatic : 
+                              betaOffsetACK-Index1 8,
+                              betaOffsetACK-Index2 10,
+                              betaOffsetCSI-Part1-Index1 7,
+                              betaOffsetCSI-Part1-Index2 6,
+                              betaOffsetCSI-Part2-Index1 5,
+                              betaOffsetCSI-Part2-Index2 4
+                             ,
+                          scaling f1
+                     ,
+                  srs-Config setup : 
+                      srs-ResourceSetToAddModList 
+                          srs-ResourceSetId 1,
+                          srs-ResourceIdList 
+                            1
+                           ,
+                          resourceType aperiodic : 
+                              aperiodicSRS-ResourceTrigger 1
+                             ,
+                          usage codebook,
+                          p0 -110
+                       ,
+                      srs-ResourceToAddModList 
+                          srs-ResourceId 1,
+                          nrofSRS-Ports port1,
+                          transmissionComb n2 : 
+                              combOffset-n2 0,
+                              cyclicShift-n2 0
+                             ,
+                          resourceMapping 
+                            startPosition 0,
+                            nrofSymbols n1,
+                            repetitionFactor n1
+                           ,
+                          freqDomainPosition 4,
+                          freqDomainShift 0,
+                          freqHopping 
+                            c-SRS 0,
+                            b-SRS 0,
+                            b-hop 0
+                           ,
+                          groupOrSequenceHopping neither,
+                          resourceType aperiodic : 
+                             ,
+                          sequenceId 1
+                 ,
+                firstActiveUplinkBWP-Id 0,
+                pusch-ServingCellConfig setup : 
+               ,
+              pdsch-ServingCellConfig setup : 
+                  nrofHARQ-ProcessesForPDSCH n16
+                 ,
+              csi-MeasConfig setup : 
+                  nzp-CSI-RS-ResourceToAddModList 
+                      nzp-CSI-RS-ResourceId 0,
+                      resourceMapping 
+                        frequencyDomainAllocation row1 : '0001'B,
+                        nrofPorts p1,
+                        firstOFDMSymbolInTimeDomain 4,
+                        cdm-Type noCDM,
+                        density three : NULL,
+                        freqBand 
+                          startingRB 0,
+                          nrofRBs 108
+                       ,
+                      powerControlOffset 0,
+                      scramblingID 85,
+                      periodicityAndOffset slots80 : 16,
+                      qcl-InfoPeriodicCSI-RS 0
+                     ,
+                      nzp-CSI-RS-ResourceId 1,
+                      resourceMapping 
+                        frequencyDomainAllocation row1 : '0001'B,
+                        nrofPorts p1,
+                        firstOFDMSymbolInTimeDomain 8,
+                        cdm-Type noCDM,
+                        density three : NULL,
+                        freqBand 
+                          startingRB 0,
+                          nrofRBs 108
+                       ,
+                      powerControlOffset 0,
+                      scramblingID 85,
+                      periodicityAndOffset slots80 : 16,
+                      qcl-InfoPeriodicCSI-RS 0
+                     ,
+                      nzp-CSI-RS-ResourceId 2,
+                      resourceMapping 
+                        frequencyDomainAllocation row1 : '0001'B,
+                        nrofPorts p1,
+                        firstOFDMSymbolInTimeDomain 4,
+                        cdm-Type noCDM,
+                        density three : NULL,
+                        freqBand 
+                          startingRB 0,
+                          nrofRBs 108
+                       ,
+                      powerControlOffset 0,
+                      scramblingID 85,
+                      periodicityAndOffset slots80 : 17,
+                      qcl-InfoPeriodicCSI-RS 0
+                     ,
+                      nzp-CSI-RS-ResourceId 3,
+                      resourceMapping 
+                        frequencyDomainAllocation row1 : '0001'B,
+                        nrofPorts p1,
+                        firstOFDMSymbolInTimeDomain 8,
+                        cdm-Type noCDM,
+                        density three : NULL,
+                        freqBand 
+                          startingRB 0,
+                          nrofRBs 108
+                       ,
+                      powerControlOffset 0,
+                      scramblingID 85,
+                      periodicityAndOffset slots80 : 17,
+                      qcl-InfoPeriodicCSI-RS 0
+                     ,
+                      nzp-CSI-RS-ResourceId 4,
+                      resourceMapping 
+                        frequencyDomainAllocation other : '000011'B,
+                        nrofPorts p8,
+                        firstOFDMSymbolInTimeDomain 5,
+                        cdm-Type cdm4-FD2-TD2,
+                        density one : NULL,
+                        freqBand 
+                          startingRB 0,
+                          nrofRBs 108
+                       ,
+                      powerControlOffset 0,
+                      scramblingID 85,
+                      periodicityAndOffset slots40 : 18,
+                      qcl-InfoPeriodicCSI-RS 1
+                   ,
+                  nzp-CSI-RS-ResourceSetToAddModList 
+                      nzp-CSI-ResourceSetId 0,
+                      nzp-CSI-RS-Resources 
+                        0,
+                        1,
+                        2,
+                        3
+                       ,
+                      trs-Info true
+                     ,
+                      nzp-CSI-ResourceSetId 1,
+                      nzp-CSI-RS-Resources 
+                        4
+                   ,
+                  csi-IM-ResourceToAddModList 
+                      csi-IM-ResourceId 0,
+                      csi-IM-ResourceElementPattern pattern0 : 
+                          subcarrierLocation-p0 s2,
+                          symbolLocation-p0 3
+                         ,
+                      freqBand 
+                        startingRB 0,
+                        nrofRBs 108
+                       ,
+                      periodicityAndOffset slots40 : 18
+                   ,
+                  csi-IM-ResourceSetToAddModList 
+                      csi-IM-ResourceSetId 0,
+                      csi-IM-Resources 
+                        0
+                   ,
+                  csi-ResourceConfigToAddModList 
+                      csi-ResourceConfigId 0,
+                      csi-RS-ResourceSetList nzp-CSI-RS-SSB : 
+                          nzp-CSI-RS-ResourceSetList 
+                            0
+                         ,
+                      bwp-Id 0,
+                      resourceType periodic
+                     ,
+                      csi-ResourceConfigId 1,
+                      csi-RS-ResourceSetList nzp-CSI-RS-SSB : 
+                          nzp-CSI-RS-ResourceSetList 
+                            1
+                         ,
+                      bwp-Id 0,
+                      resourceType periodic
+                     ,
+                      csi-ResourceConfigId 2,
+                      csi-RS-ResourceSetList csi-IM-ResourceSetList : 
+                          0
+                         ,
+                      bwp-Id 0,
+                      resourceType periodic
+                   ,
+                  csi-ReportConfigToAddModList 
+                      reportConfigId 0,
+                      resourcesForChannelMeasurement 1,
+                      csi-IM-ResourcesForInterference 2,
+                      reportConfigType aperiodic : 
+                          reportSlotOffsetList 
+                            7,
+                            7,
+                            7,
+                            7,
+                            7,
+                            7,
+                            7,
+                            7
+                         ,
+                      reportQuantity cri-RI-PMI-CQI : NULL,
+                      reportFreqConfiguration 
+                        cqi-FormatIndicator widebandCQI,
+                        pmi-FormatIndicator widebandPMI,
+                        csi-ReportingBand subbands7 : '1111111'B
+                       ,
+                      timeRestrictionForChannelMeasurements notConfigured,
+                      timeRestrictionForInterferenceMeasurements notConfigured,
+                      codebookConfig 
+                        codebookType type1 : 
+                            subType typeI-SinglePanel : 
+                                nrOfAntennaPorts moreThanTwo : 
+                                    n1-n2 two-two-TypeI-SinglePanel-Restriction : '11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111'B
+                                   ,
+                                typeI-SinglePanel-ri-Restriction '00001111'B
+                               ,
+                            codebookMode 1
+                       ,
+                      dummy n1,
+                      groupBasedBeamReporting disabled : 
+                         ,
+                      cqi-Table table2,
+                      subbandSize value2
+                   ,
+                  reportTriggerSize 1,
+                  aperiodicTriggerStateList setup : 
+                        associatedReportConfigInfoList 
+                            reportConfigId 0,
+                            resourcesForChannel nzp-CSI-RS : 
+                                resourceSet 1
+                               ,
+                            csi-IM-ResourcesForInterference 1
+                 ,
+              tag-Id 0
+
+
+L3 Data in Hex : 
+    26 1B BF 00 02 21 88 14 10 D7
+    05 80 06 00 42 05 10 95 C1 60
+    01 80 00 11 42 99 71 80 2A 70
+    45 8E 11 71 C3 5C B8 8D 47 15
+    CC E3 67 9C 21 0C A3 38 10 E1
+    0A 0B A0 08 70 85 05 C0 0A 20
+    25 65 C2 04 68 92 86 E2 10 CA
+    33 8C E8 12 00 00 04 01 79 55
+    42 98 50 63 E9 1F FC C9 5B F7
+    28 04 58 99 28 01 80 10 10 05
+    C8 04 5F A9 55 EF 29 81 A8 00
+    CA 00 C0 68 0D 6C 0F FE EC 02
+    E0 FF EE C0 20 BA 88 3E BB 94
+    00 E8 46 FD 80 37 79 90 23 8F
+    CA 88 40 00 C0 68 57 53 50 04
+    23 68 48 11 82 90 00 9C A0 5C
+    1B F7 71 02 82 50 00 0B 02 84
+    85 8B 02 A8 AC 2B 81 22 05 F4
+    15 C1 56 82 18 6A A4 A9 97 32
+    02 CC 44 65 C9 56 88 48 6A A4
+    A9 97 32 02 CC 44 65 04 10 E9
+    D0 2E E1 10 2E 8B 88 16 08 86
+    38 AB F9 02 41 B8 9D 01 F0 85
+    02 04 1E 95 80 83 5B A7 4E E2
+    15 5A 3F BA F0 0A 07 E8 76 00
+    00 26 96 70 CB 32 8A 07 FF FC
+    00 00 00 04 00 13 70 44 20 00
+    00 20 80 1A 22 83 06 80 0A 00
+    00 09 A5 CE 19 66 C4 9E 00 3C
+    B8 D4 3D 99 96 12 77 82 37 08
+    6E 18 DC 41 B8 A3 71 86 E4 0D
+    C9 1B EC D3 45 55 8F 30 08 66
+    A3 07 DD B8 01 01 20 24 98 1B
+    10 06 E1 08 40 00 00 42 CA 41
+    C1 90 40 80 08 81 00 48 00 04
+    45 06 00 C0 B0 C2 46 A0 02 A3
+    A5 00 32 80 02 00 26 6A AA 90
+    82 00 02 08 18 42 01 C1 B0 00
+    03 49 0A 01 81 00 1A 49 50 0C
+    10 00 D2 52 80 60 C0 06 92 D4
+    03 08 00 34 98 A0 18 50 01 A4
+    D5 00 C7 1A 40 0C 28 20 58 03
+    01 D4 2F 34 56 78 BC 9A 43 49
+    24 08 00 C1 0E DE 08 DC 21 B8
+    63 71 06 E2 8D C6 1B 90 37 24
+    6E 3E F4 28 E6 29 39 40 A0 80
+    20 15 C0 00 20 00 04 00 00 00
+    00 44 22 B5 51 58 10 C0 00 42
+    10 00 A8 81 56 48 00 30 10 11
+    04 00 2A 20 55 92 00 0C 08 04
+    21 00 0A 88 15 64 88 03 03 01
+    10 40 02 A2 05 59 22 00 C1 0C
+    36 B2 00 2A 20 55 74 80 82 20
+    06 00 02 04 06 00 80 08 07 00
+    98 00 A8 E9 00 00 00 10 02 00
+    04 02 80 11 01 40 01 00 5E 00
+    08 2D C7 1C 71 C7 1C 71 CF 09
+    FF 21 FF FF FF FF FF FF FF FF
+    0F 26 60 00 80 00 00 1A 80 00
+    04 8A 04 94 4F C7 E2 8B A6 C0
+    80
+</pre></body></html>
